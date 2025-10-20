@@ -1,0 +1,70 @@
+# Ignore everything by default
+*
+
+# But keep these:
+!.gitignore
+!*.tex
+!*.bib
+!*.pdf
+!*.png
+!*.jpg
+!*.jpeg
+!*.svg
+!*.eps
+!*.pdf_tex
+!figures/
+!images/
+!img/
+!refs/
+
+# Ignore all LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.synctex.gz
+*.run.xml
+*.bcf
+*.nav
+*.snm
+*.vrb
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+
+# Temporary/editor files
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+*.backup
+*.autosave
+
+# Build directories
+build/
+out/
+_output/
+auto/
+tmp/
+
+# IDE/project files
+.vscode/
+.idea/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+

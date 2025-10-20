@@ -16,5 +16,153 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{Nasa_ramjet-schematic}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={{NASA}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhashraw}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhashraw}{1f99771bc3e23e6097509a331544ab65}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Originally published on the NASA website. Archived version accessed on 12.10.2025. Public domain.}
+      \field{title}{LIQUID HYDROGEN AS A PROPULSION FUEL,1945-1959}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb web.archive.org/web/20110222032757/history.nasa.gov/SP-4404/app-b7.htm
+      \endverb
+      \verb{url}
+      \verb web.archive.org/web/20110222032757/history.nasa.gov/SP-4404/app-b7.htm
+      \endverb
+    \endentry
+    \entry{segal2009}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2a988d53a4b23f38944f650ac4f3d901}{%
+           family={Segal},
+           familyi={S\bibinitperiod},
+           given={Corin},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge : Cambridge UP}%
+      }
+      \strng{namehash}{2a988d53a4b23f38944f650ac4f3d901}
+      \strng{fullhash}{2a988d53a4b23f38944f650ac4f3d901}
+      \strng{fullhashraw}{2a988d53a4b23f38944f650ac4f3d901}
+      \strng{bibnamehash}{2a988d53a4b23f38944f650ac4f3d901}
+      \strng{authorbibnamehash}{2a988d53a4b23f38944f650ac4f3d901}
+      \strng{authornamehash}{2a988d53a4b23f38944f650ac4f3d901}
+      \strng{authorfullhash}{2a988d53a4b23f38944f650ac4f3d901}
+      \strng{authorfullhashraw}{2a988d53a4b23f38944f650ac4f3d901}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The scramjet engine: processes and characteristics}
+      \field{year}{2009}
+    \endentry
+    \entry{sutton2017}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=e102ee022d92c01d7812b55c9b6e5147}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={George\bibnamedelima Paul},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=cd475bf69adc75d078ab151719775682}{%
+           family={Biblarz},
+           familyi={B\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{76b5456051bade11736dbd2a874248c3}
+      \strng{fullhash}{76b5456051bade11736dbd2a874248c3}
+      \strng{fullhashraw}{76b5456051bade11736dbd2a874248c3}
+      \strng{bibnamehash}{76b5456051bade11736dbd2a874248c3}
+      \strng{authorbibnamehash}{76b5456051bade11736dbd2a874248c3}
+      \strng{authornamehash}{76b5456051bade11736dbd2a874248c3}
+      \strng{authorfullhash}{76b5456051bade11736dbd2a874248c3}
+      \strng{authorfullhashraw}{76b5456051bade11736dbd2a874248c3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rocket propulsion elements}
+      \field{year}{2017}
+    \endentry
+    \entry{Wiki_mach-number}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-09}
+      \field{title}{Mach Number}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb en.wikipedia.org/wiki/Mach_number
+      \endverb
+      \verb{url}
+      \verb en.wikipedia.org/wiki/Mach_number
+      \endverb
+    \endentry
+    \entry{Wiki_scramjet}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-12}
+      \field{title}{Scramjet}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb en.wikipedia.org/wiki/Scramjet
+      \endverb
+      \verb{url}
+      \verb en.wikipedia.org/wiki/Scramjet
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

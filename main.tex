@@ -7,13 +7,21 @@
 \usepackage{graphicx}
 
 \usepackage[backend=biber,citestyle=numeric-comp,bibstyle=mla-new]{biblatex}
-\addbibresource{references.bib}
+\addbibresource{./references.bib}
 
 \usepackage{mathptmx}
 
 \usepackage{float}
 
 \usepackage{threeparttable}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\newcommand{\subsubsubsection}[1]{
+    \paragraph{#1}\mbox{}\\
+}
+
 
 %%% title page %%%
 \pretitle{
@@ -45,15 +53,146 @@
 	
 	\tableofcontents
 	\newpage
-	
-	\section{Introduction}
-		\subsection{Objectives of the Work}
-		\subsection{}
-	\section{Theoretical Part}
-	
+  %% INTRODUCTION %%
+  \section{Introduction}
+    \subsection{Objectives and Structure of the Work}
+      (Outline what this paper aims to achieve and how it is structured.)
+
+    \subsection{Background and Motivation}
+      (Discuss why humanity strives for space and interstellar travel, and how propulsion technology is central to that goal.)
+
+  %% THEORETICAL PART %%
+  \section{Theoretical Part}
+   \subsection{Early Concepts and the First Rocket Engine}
+    (Briefly cover early gunpowder rockets and pioneers like Tsiolkovsky, Goddard, Oberth.)
+      \subsection{Classification of Propulsion Systems}
+
+    Propulsion is defined as \textit{"the action or process of propelling"} (\textit{"to drive forward or onward by or as if by means of a force that imparts motion"}). By the Merriam-Webster Dictionary. 
+
+    It can also be defined as "the act of changing the motion of a body with respect to an inertial reference frame."\supercite{sutton2017}
+
+    In engine propulsion, the most common way to achieve such thing is via \textit{chemical combustion}. The energy can also be supplied by \textit{solar radiation}, or a \textit{nuclear reactor}. As such, the varios types of propulsion can be generally divided up into three categories:
+    \begin{itemize}
+        \item chemical propulsion
+        \item nuclear propulsion
+        \item solar propulsion
+    \end{itemize}
+   
+    \begin{table}[H]
+  \centering
+
+  \begin{threeparttable}
+  \begin{tabular}{|| p{3cm} | p{3cm} | p{3cm} | p{3cm} ||}
+      \hline
+      Feature & Chemical Rocket Engine or Rocket Motor & Turbojet Engine & Ramjet Engine \\
+      \hline\hline
+      thrust to weight ratio, typical & 75:1 & 5:1, turbojet and afterburner & 7:1 at Mach 3 at 9,144m (30,000ft) \\
+      \hline
+      Specific fuel consumption$^{a}$ & 8 - 14 & 0.5 - 1.5 & 2.3 - 3.5 \\
+      \hline
+      Specific thrust$^{b}$ & 5,000 - 25,000 & 2500 (low Mach$^{c}$ numbers at sea level) & 2700 (Mach 2 at sea level) \\
+      \hline
+      Specific impulse$^{d}$ & 270 sec & 1600 sec & 1400 sec \\
+      \hline
+      Thrust change with altitude & Slight increase & Decrease & Decrease \\
+      \hline
+      Thrust vs. flight speed & Nearly constant & Increases with speed & Increases with speed \\
+      \hline
+      Thrust vs air temperature & Constant & Decreases with temperaure & Decreases with temperature \\
+      \hline
+      Flight speed vs. exhaust velocity & Unrelated, flight speed can be greater & Flight speed always less than exhaust velocity & Flight speed always less than exhaust velocity \\
+      \hline
+      Altitude limitation & None; suited for space travel & 14,000 - 17,000 m & 20,000 m at Mach 3, 30,000 m at Mach 5, 45,000 m at Mach 12 \\
+      \hline
+  \end{tabular}
+
+  \begin{tablenotes}
+  \item[a] Multiply by 0.102 to convert to $kg/(hr-N)$.
+  \item[b] Multiply by 47.9 to convert to $N/m^2$
+  \item[c] Mach number is the ratio of gas speed to local speed of sound (See Equation~\ref{eq:Mach Number} (Appendix~\ref{app:equations})).
+  \item[d] \textit{Specific impulse} is a performance parameter (See Equation~\ref{eq:Specific Impulse} (Appendix~\ref{app:equations})) 
+  \end{tablenotes}
+
+  \caption{Comparison of Several Characteristics of a Typical Chemical Propulsion Rocket Propulsion System and Two-Duct Propulsion Systems\supercite{sutton2017}} 
+  \label{tab:1-2}
+  \end{threeparttable}
+  \end{table}
+
+    Input in rocket propulsion systems is either heat or electricity. Useful output thrust comes from the kinetic energy of the ejected matter and from the propellant pressure on inner chamber walls and at the nozzle exit; thus. rocket propulsion systems primarily convert input energies into the kinetic energy of the exhausted gas. The ejected mass can be in a solid, liquid or gaseous state. Often, combinations of two or more states are ejected. At high enough temperatures, the ejected mass can also be in a state of plasma.\supercite{sutton2017}
+
+    \subsubsection{Duct Jet Propulsion}
+      Duct jet engines, more commonly called "air breathing" engines, are engines which utilize airflow that is then energized inside a duct. They use atmospheric oxygen to burn fuel stored onboard. This class includes the following:\supercite{sutton2017}
+      \begin{itemize}
+          \item turbojets
+          \item turbofans
+          \item ramjets
+          \item pulse jets
+          \item scramjets\supercite{segal2009}
+      \end{itemize}
+      They are mentioned here mainly as to provide a background and comparison to rocket propulsion engines. 
+
+      Out of all of the ducted engines, the \textit{turbojet engine} is the most widely used.
+
+    \subsubsubsection{Ramjet Engine}
+      For supersonic flight in the speeds above Mach 2, the \textit{ramjet engine} (which is a pure ducted engine) is the best suited within the earth's atmosphere. Its compression is purely gas dynamic and thrust is produced by increasing the momentum of the subsonic compressed air as it passes through the ramjet in a very similar manner to the functionality of \textit{turbofan} and \textit{turbojet} engines, just without any compressor or turbine hardware.\supercite{sutton2017} 
+
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{z_Assets/Graphics/Schematics/Ramjet_P280b.jpg}
+        \caption{Simplified schematic of a ramjet engine with a supersonic inlet (a converging/diverging flow passage)\supercite{Nasa_ramjet-schematic}}
+        \label{fig:ramjet engine}
+      \end{figure}
+
+      Ramjets with subsonic combustion and hydrocarbon fuels have an upper speed limit of approx. 5 Mach; Hydrogen fuel with hydrogen cooling raises this maximum to at least 16 Mach.
+
+    \subsubsubsection{Scramjet Engine}
+      The Scramjet engine is a ramjet engine utilizing \textit{super sonic combustion}. Which allows for much freeer and faster air flow than \textit{turbojet} or \textit{ramjet} engines. As can be seen in Figure~\ref{fig:scramjet engine_comparison} (Appendix~\ref{app:diagrams}).
+
+      So far, Scramjet engines have only been used in a few prototype vehicles and military experiments. A Scramjet relies on high vehicle speed to compress the incoming air forcefully before combustion (hence sc\textbf{ramjet}), but whereas a ramjet decelerates the air to subsonic velocities before combustion using shock cones, a Scramjet has no shock cone and slows the airflow using shockwaves produced by its ignition source in place of a shock cone.\supercite{segal2009}${}^;$\supercite{Wiki_scramjet}
+
+
+
+    \subsubsection{Rocket Propulsion}
+      (Describe chemical and non-chemical rockets, key principles like Newton’s Third Law.)
+
+
+  \subsection{The First Rocket to Reach Space}
+    (Discuss V-2 and its influence on later designs.)
+  \subsection{The Saturn V F-1 Engine}
+    (Detail engineering principles, performance, and significance.)
+  \subsection{Post-Saturn Developments}
+    (Space Shuttle Main Engine, RD-170, Merlin, Raptor, etc.)
+  \subsection{Emerging Propulsion Technologies}
+    (Ion engines, nuclear thermal propulsion, solar sails, and antimatter or fusion concepts.)
+  \subsection{Theoretical Framework for Interstellar Propulsion}
+    (Discuss concepts like Project Daedalus, Breakthrough Starshot, Alcubierre drive, etc.)
+
+  %% PRACTICAL PART %%
 	\section{Practical Part}
-	
+	  \subsection{Hypothesis}
 	\section{Conclusion}
 	
-	
+  \appendix
+
+  \section{Appendix A: Definitions}
+
+\subsection{Equations}\label{app:equations}
+  \subsubsection{Mach Number}
+      The Mach number (M or Ma), often only Mach, is a dimensionless quantity in fluid dynamics representing the ratio of flow velocity past a boundary to the local speed of sound.\supercite{Wiki_mach-number}
+      \begin{equation} \label{eq:Mach Number}
+          M = \frac{u}{c}
+      \end{equation}
+      where:
+      \begin{itemize}
+        \item $M$ is the local Mach number,\supercite{Wiki_mach-number}
+        \item $u$ is the local flow velocity with respect to the boundaries (either internal, such as an object immersed in the flow, or external, like a channel), and\supercite{Wiki_mach-number}
+        \item $c$ is the speed of sound in the medium, which in air varies with the square root of the thermodynamic temperature.\supercite{Wiki_mach-number}
+      \end{itemize}
+  \subsubsection{Specific Impulse}
+      The \textit{specific impulse $I_s$} represents the thrust per unit propellant "weight" flow rate. It is an important figure of merit of the performance of any rocket propulsion system, a concept similar to kilometers per liter or miles per hour as applied to an automobile. A higher number often indicates a better performance. If the total propellant mass flow rate is $\dot{m}$ and the standard acceleration of gravity is $g_0$ (with an \textit{average} value at the Earth's sea level of $9.8066\ m/sec^2$ or $32.174\ ft/sec^2$), then 
+      \begin{equation} \label{eq:Specific Impulse}
+        I_s = \frac{\int_{0}^{t}Fdt}{g_{0} \int_0^t \dot{m}dt}
+      \end{equation}
+
+
 \end{document}
