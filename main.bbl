@@ -19,6 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{Img_scramjet}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=cee77a5b4b09405d2848cc398e4e5062}{%
+           family={GreyTrafalgar},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{cee77a5b4b09405d2848cc398e4e5062}
+      \strng{fullhash}{cee77a5b4b09405d2848cc398e4e5062}
+      \strng{fullhashraw}{cee77a5b4b09405d2848cc398e4e5062}
+      \strng{bibnamehash}{cee77a5b4b09405d2848cc398e4e5062}
+      \strng{authorbibnamehash}{cee77a5b4b09405d2848cc398e4e5062}
+      \strng{authornamehash}{cee77a5b4b09405d2848cc398e4e5062}
+      \strng{authorfullhash}{cee77a5b4b09405d2848cc398e4e5062}
+      \strng{authorfullhashraw}{cee77a5b4b09405d2848cc398e4e5062}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{CC BY-SA 3.0 License. Accessed: 2025-10-12}
+      \field{title}{The compression, combustion, and expansion regions of: (a) turbojet, (b) ramjet, and (c) scramjet engines.}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb en.wikipedia.org/wiki/Scramjet#/media/File:Turbo_ram_scramjet_comparative_diagram.svg
+      \endverb
+      \verb{url}
+      \verb en.wikipedia.org/wiki/Scramjet#/media/File:Turbo_ram_scramjet_comparative_diagram.svg
+      \endverb
+    \endentry
     \entry{Nasa_ramjet-schematic}{online}{}{}
       \name{author}{1}{}{%
         {{hash=1f99771bc3e23e6097509a331544ab65}{%

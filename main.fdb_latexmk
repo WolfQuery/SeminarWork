@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1760960947.37919 "main.bcf" "main.bbl" "main" 1760960951.41863 0
+["biber main"] 1760964212.99201 "main.bcf" "main.bbl" "main" 1760964350.50416 0
   "./references.bib" 1760513370 2350 3d1cf1e812e29b15aa0d4e6089de28d1 ""
-  "main.bcf" 1760960951.32204 124013 8c36088dd6fbae12c6b97ce900796b9f "pdflatex"
+  "main.bcf" 1760964350.41638 124149 a3c5794bb78d440a18cbf837920dca7c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1760960950.04165 "main.tex" "main.pdf" "main" 1760960951.41944 0
+["pdflatex"] 1760964349.0782 "main.tex" "main.pdf" "main" 1760964350.5046 0
   "/nix/store/jjb6fa2kp152kmc08n20qill4gx6ls91-texlive-combined-full-2024-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5467273 30813620bba0b85c06b6cfbef66f16f5 ""
   "/nix/store/jjb6fa2kp152kmc08n20qill4gx6ls91-texlive-combined-full-2024-final/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3353382 afe8c03b3052bb3e0121325a53307bab ""
   "/nix/store/jjb6fa2kp152kmc08n20qill4gx6ls91-texlive-combined-full-2024-final/share/texmf-var/web2c/texmf.cnf" 1 44167 2521f29f5eeb62173293093d249f0987 ""
@@ -94,12 +94,13 @@
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/threeparttable/threeparttable.sty" 1 13506 a4e71a27db1a69b6fabada5beebf0844 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/titling/titling.sty" 1 7358 95ac619994bd30d405a74f3eca431c84 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "main.aux" 1760960951.31804 4628 a9c08bfce6a4bd6d91698337a25df395 "pdflatex"
-  "main.bbl" 1760960948.60403 6563 f50b2df32aa8294ee12632f3bbba0d97 "biber main"
-  "main.run.xml" 1760960951.32428 2408 bf649329873091f2c127511d9c67a11b "pdflatex"
-  "main.tex" 1760960945.06602 10226 1fd8dde5fd3be084e0c52b2e8b7e2bbd ""
-  "main.toc" 1760960951.32428 1730 29476cb7935eb4bef6729094283d0afe "pdflatex"
+  "main.aux" 1760964350.41238 5081 9073f53601699f841a37470e8806ca5d "pdflatex"
+  "main.bbl" 1760964214.27162 7909 50dceb0c71d28430ff310d5a6d790540 "biber main"
+  "main.run.xml" 1760964350.41867 2408 bf649329873091f2c127511d9c67a11b "pdflatex"
+  "main.tex" 1760964348.73037 10549 09582db1da81fe641376cb625c9939b4 ""
+  "main.toc" 1760964350.41867 1730 ac46646e61cadcc860e408e62ff6e8f8 "pdflatex"
   "z_Assets/Graphics/Schematics/Ramjet_P280b.jpg" 1760513370 9532 32a2b7e5b58836c0625a5da97b57220f ""
+  "z_Assets/Graphics/Schematics/Turbo_ram_scramjet_comparative_diagram.svg-1.png" 1760513370 114794 cb8a361f1ffc67223c82bc58d41b8b83 ""
   "z_Assets/Images/Duhovka-logo.png" 1760513370 23231 f1a0559d5549f45093d3164beb95e954 ""
   (generated)
   "main.aux"
