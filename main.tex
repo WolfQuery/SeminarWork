@@ -14,6 +14,8 @@
 \usepackage{float}
 
 \usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{multirow}
 
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
@@ -77,46 +79,54 @@
         \item nuclear propulsion
         \item solar propulsion
     \end{itemize}
-   
-    \begin{table}[H]
+
+   \begin{table}[H]
   \centering
-
   \begin{threeparttable}
-  \begin{tabular}{|| p{3cm} | p{3cm} | p{3cm} | p{3cm} ||}
+    \begin{tabularx}{\textwidth}{||c|c|c|c|c||}
+      \hline \hline
+      \multirow{2}{*}{\textbf{Propulsion Device}} &
+        \multicolumn{3}{c}{\textbf{Energy Source}$^a$} &
+        \multirow{2}{*}{\textbf{Propellant or Working Fluid}} \\
+        \cline{2-4}
+      & Chemical & Nuclear & Solar & \\
       \hline
-      Feature & Chemical Rocket Engine or Rocket Motor & Turbojet Engine & Ramjet Engine \\
-      \hline\hline
-      thrust to weight ratio, typical & 75:1 & 5:1, turbojet and afterburner & 7:1 at Mach 3 at 9,144m (30,000ft) \\
+      Turbojet & D/P &  &  & Fuel + air \\
       \hline
-      Specific fuel consumption$^{a}$ & 8 - 14 & 0.5 - 1.5 & 2.3 - 3.5 \\
+      Turbo-ramjet & TFD &  &  & Fuel + air \\
       \hline
-      Specific thrust$^{b}$ & 5,000 - 25,000 & 2500 (low Mach$^{c}$ numbers at sea level) & 2700 (Mach 2 at sea level) \\
+      Ramjet (Hydrocarbon fuel) & D/P & TFD &  & Fuel + air \\
       \hline
-      Specific impulse$^{d}$ & 270 sec & 1600 sec & 1400 sec \\
+      Ramjet ($H_2$ cooled) & TFD &  &  & Hydrogen + air \\
       \hline
-      Thrust change with altitude & Slight increase & Decrease & Decrease \\
+      Rocket (chemical) & D/P & TFD &  & Stored propellant \\
       \hline
-      Thrust vs. flight speed & Nearly constant & Increases with speed & Increases with speed \\
+      Ducted rocket & TFD &  &  & Stored solid fuel + surrounding air \\
       \hline
-      Thrust vs air temperature & Constant & Decreases with temperaure & Decreases with temperature \\
+      Electric rocket & D/P &  & D/P & Stored propellant \\
       \hline
-      Flight speed vs. exhaust velocity & Unrelated, flight speed can be greater & Flight speed always less than exhaust velocity & Flight speed always less than exhaust velocity \\
+      Nuclear fission rocket &  & TFD &  & Stored $H_2$ \\
       \hline
-      Altitude limitation & None; suited for space travel & 14,000 - 17,000 m & 20,000 m at Mach 3, 30,000 m at Mach 5, 45,000 m at Mach 12 \\
+      Solar heated rocket &  &  & TFD & Stored $H_2$ \\
       \hline
-  \end{tabular}
+      Photon rocket$^b$ &  & TFND &  & Photon ejection (no stored propellant) \\
+      \hline
+      Solar sail &  &  & TFD & Photon reflection (no stored propellant) \\
+      \hline
+    \end{tabularx}
 
-  \begin{tablenotes}
-  \item[a] Multiply by 0.102 to convert to $kg/(hr-N)$.
-  \item[b] Multiply by 47.9 to convert to $N/m^2$
-  \item[c] Mach number is the ratio of gas speed to local speed of sound (See Equation~\ref{eq:Mach Number} (Appendix~\ref{app:equations})).
-  \item[d] \textit{Specific impulse} is a performance parameter (See Equation~\ref{eq:Specific Impulse} (Appendix~\ref{app:equations})) 
-  \end{tablenotes}
+    \begin{tablenotes}
+      \item[a] \textbf{D/P} developed and/or considered practical; 
+      \textbf{TFD} technical feasibility has been demonstrated, but development is incomplete; 
+      \textbf{TFND} technical feasibility has not yet been demonstrated.
+      \item[b] Essentially a really big light bulb. 
+    \end{tablenotes}
 
-  \caption{Comparison of Several Characteristics of a Typical Chemical Propulsion Rocket Propulsion System and Two-Duct Propulsion Systems\supercite{sutton2017}} 
-  \label{tab:1-2}
+    \caption{Energy Sources and Propellants for Various Propulsion Concepts\supercite{sutton2017}}
+    \label{tab:1-1}
   \end{threeparttable}
-  \end{table}
+\end{table} 
+  
 
     Input in rocket propulsion systems is either heat or electricity. Useful output thrust comes from the kinetic energy of the ejected matter and from the propellant pressure on inner chamber walls and at the nozzle exit; thus. rocket propulsion systems primarily convert input energies into the kinetic energy of the exhausted gas. The ejected mass can be in a solid, liquid or gaseous state. Often, combinations of two or more states are ejected. At high enough temperatures, the ejected mass can also be in a state of plasma.\supercite{sutton2017}
 
@@ -129,7 +139,47 @@
           \item pulse jets
           \item scramjets\supercite{segal2009}
       \end{itemize}
-      They are mentioned here mainly as to provide a background and comparison to rocket propulsion engines. 
+      They are mentioned here mainly as to provide a background and comparison to rocket propulsion engines.
+      \begin{table}[H]
+        \centering
+
+        \begin{threeparttable}
+          \begin{tabular}{|| p{3cm} | p{3cm} | p{3cm} | p{3cm} ||}
+              \hline
+              Feature & Chemical Rocket Engine or Rocket Motor & Turbojet Engine & Ramjet Engine \\
+              \hline\hline
+              thrust to weight ratio, typical & 75:1 & 5:1, turbojet and afterburner & 7:1 at Mach 3 at 9,144m (30,000ft) \\
+              \hline
+              Specific fuel consumption$^{a}$ & 8 - 14 & 0.5 - 1.5 & 2.3 - 3.5 \\
+              \hline
+              Specific thrust$^{b}$ & 5,000 - 25,000 & 2500 (low Mach$^{c}$ numbers at sea level) & 2700 (Mach 2 at sea level) \\
+              \hline
+              Specific impulse$^{d}$ & 270 sec & 1600 sec & 1400 sec \\
+              \hline
+              Thrust change with altitude & Slight increase & Decrease & Decrease \\
+              \hline
+              Thrust vs. flight speed & Nearly constant & Increases with speed & Increases with speed \\
+              \hline
+              Thrust vs air temperature & Constant & Decreases with temperaure & Decreases with temperature \\
+              \hline
+              Flight speed vs. exhaust velocity & Unrelated, flight speed can be greater & Flight speed always less than exhaust velocity & Flight speed always less than exhaust velocity \\
+              \hline
+              Altitude limitation & None; suited for space travel & 14,000 - 17,000 m & 20,000 m at Mach 3, 30,000 m at Mach 5, 45,000 m at Mach 12 \\
+              \hline
+          \end{tabular}
+
+          \begin{tablenotes}
+            \item[a] Multiply by 0.102 to convert to $kg/(hr-N)$.
+            \item[b] Multiply by 47.9 to convert to $N/m^2$
+            \item[c] Mach number is the ratio of gas speed to local speed of sound (See Equation~\eqref{eq:Mach Number}(Appendix~\ref{app:equations})).
+            \item[d] \textit{Specific impulse} is a performance parameter (See Equation~\eqref{eq:Specific Impulse}(Appendix~\ref{app:equations})) 
+            \end{tablenotes}
+
+          \caption{Comparison of Several Characteristics of a Typical Chemical Propulsion Rocket Propulsion System and Two-Duct Propulsion Systems\supercite{sutton2017}} 
+          \label{tab:1-2}
+          \end{threeparttable}
+        \end{table}
+
 
       Out of all of the ducted engines, the \textit{turbojet engine} is the most widely used.
 
@@ -199,5 +249,6 @@
         I_s = \frac{\int_{0}^{t}Fdt}{g_{0} \int_0^t \dot{m}dt}
       \end{equation}
 
+      \printbibliography[title=Bibliography]
 
 \end{document}
