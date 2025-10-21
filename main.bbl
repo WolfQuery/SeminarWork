@@ -190,6 +190,32 @@
       \verb en.wikipedia.org/wiki/Scramjet
       \endverb
     \endentry
+    \entry{young2008}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=87edea6a8dfa8394892bd8126cadcc24}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{87edea6a8dfa8394892bd8126cadcc24}
+      \strng{fullhash}{87edea6a8dfa8394892bd8126cadcc24}
+      \strng{fullhashraw}{87edea6a8dfa8394892bd8126cadcc24}
+      \strng{bibnamehash}{87edea6a8dfa8394892bd8126cadcc24}
+      \strng{authorbibnamehash}{87edea6a8dfa8394892bd8126cadcc24}
+      \strng{authornamehash}{87edea6a8dfa8394892bd8126cadcc24}
+      \strng{authorfullhash}{87edea6a8dfa8394892bd8126cadcc24}
+      \strng{authorfullhashraw}{87edea6a8dfa8394892bd8126cadcc24}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Saturn V F-1 Engine : Powering Apollo into History}
+      \field{year}{2008}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
