@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1761054457.18345 "main.bcf" "main.bbl" "main" 1761054698.1007 0
+["biber main"] 1761055977.40304 "main.bcf" "main.bbl" "main" 1761056111.32855 0
   "./references.bib" 1760513370 2350 3d1cf1e812e29b15aa0d4e6089de28d1 ""
-  "main.bcf" 1761054697.97863 124748 6981f0fd0158230911608239fc24503c "pdflatex"
+  "main.bcf" 1761056111.19505 124748 6981f0fd0158230911608239fc24503c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761054696.1154 "main.tex" "main.pdf" "main" 1761054698.10145 2
+["pdflatex"] 1761056109.29256 "main.tex" "main.pdf" "main" 1761056111.32921 2
   "/nix/store/jjb6fa2kp152kmc08n20qill4gx6ls91-texlive-combined-full-2024-final/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5467273 30813620bba0b85c06b6cfbef66f16f5 ""
   "/nix/store/jjb6fa2kp152kmc08n20qill4gx6ls91-texlive-combined-full-2024-final/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 3353382 afe8c03b3052bb3e0121325a53307bab ""
   "/nix/store/jjb6fa2kp152kmc08n20qill4gx6ls91-texlive-combined-full-2024-final/share/texmf-var/web2c/texmf.cnf" 1 44167 2521f29f5eeb62173293093d249f0987 ""
@@ -53,6 +53,12 @@
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/infwarerr/infwarerr.sty" 1 8356 7bbb2c2373aa810be568c29e333da8ed ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/ltxcmds/ltxcmds.sty" 1 17865 1a9bd36b4f98178fa551aca822290953 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/pdftexcmds/pdftexcmds.sty" 1 20089 80423eac55aa175305d35b49e04fe23b ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/xkeyval/xkeyval.tex" 1 19231 27205ee17aaa2902aea3e0c07a3cfc65 ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/generic/xkeyval/xkvutils.tex" 1 7677 9cb1a74d945bc9331f2181c0a59ff34a ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/adjustbox/adjcalc.sty" 1 5598 c49b91713cbe5e50a1fabefb733eda0d ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/adjustbox/adjustbox.sty" 1 56907 b74d2bd6fed8dc761953edb2fbea781b ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/adjustbox/tc-pdftex.def" 1 4304 461724faa0dfbdec2d80de16c11f407c ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/adjustbox/trimclip.sty" 1 7245 2bf1779563af51e666da8f26ea1f8455 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/base/ifthen.sty" 1 5525 9dced5929f36b19fa837947f5175b331 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/base/report.cls" 1 23203 7ac64169eac711b8259b91f4833984f3 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/base/size12.clo" 1 8449 ffe4ba2166a344827c3a832d1d5e0a91 ""
@@ -69,6 +75,7 @@
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/blx-dm.def" 1 32761 18d14e3b502c120f79b2184de4e21d14 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/cbx/numeric-comp.cbx" 1 10425 7de071597dabda19c14ff0780122d6d4 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/biblatex/lbx/english.lbx" 1 40021 daa5a82ed0967f3ac4b77cb8384cac55 ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/collectbox/collectbox.sty" 1 9124 59c3b56f1a073de66e3eea35f9c173c8 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/etoolbox/etoolbox.sty" 1 46850 d87daedc2abdc653769a6f1067849fe0 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/float/float.sty" 1 6749 16d2656a1984957e674b149555f1ea1d ""
@@ -78,6 +85,7 @@
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics/graphicx.sty" 1 8010 6f2ad8c2b2ffbd607af6475441c7b5e4 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics/keyval.sty" 1 2671 70891d50dac933918b827d326687c6e8 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/graphics/trig.sty" 1 4023 2c9f39712cf7b43d3eb93a8bbd5c8f67 ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/ifoddpage/ifoddpage.sty" 1 2142 eae42205b97b7a3ad0e58db5fe99e3e6 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/kvoptions/kvoptions.sty" 1 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/kvsetkeys/kvsetkeys.sty" 1 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/l3backend/l3backend-pdftex.def" 1 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
@@ -99,11 +107,13 @@
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/tools/array.sty" 1 14552 27664839421e418b87f56fa4c6f66b1a ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/tools/tabularx.sty" 1 7243 e5dac1240636811edb77568b81818372 ""
   "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "main.aux" 1761054697.97463 6065 3f8f3d22b8d3c814e79bdad958fae125 "pdflatex"
-  "main.bbl" 1761054458.99943 8994 647703f9824683ab82eef5b86518fd52 "biber main"
-  "main.run.xml" 1761054697.98112 2408 bf649329873091f2c127511d9c67a11b "pdflatex"
-  "main.tex" 1761054694.97869 12905 611cf7906f3dbae86e7678fb804241e8 ""
-  "main.toc" 1761054697.98112 1730 c4ddaddc3a6f58d7bc0f8de0ef00bdb4 "pdflatex"
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/varwidth/varwidth.sty" 1 10894 d359a13923460b2a73d4312d613554c8 ""
+  "/nix/store/q4gbqp2pph3mw2jp5kwg0zlhwwwh3hx8-texlive-combined-full-2024-final-texmfdist/tex/latex/xkeyval/xkeyval.sty" 1 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
+  "main.aux" 1761056111.18605 6102 e35e89b7dbdeb7559ad8e37364e9c56e "pdflatex"
+  "main.bbl" 1761055979.38356 8994 647703f9824683ab82eef5b86518fd52 "biber main"
+  "main.run.xml" 1761056111.19729 2408 bf649329873091f2c127511d9c67a11b "pdflatex"
+  "main.tex" 1761056107.70603 12998 09dd88ec459164f150053d5b9c15a4f1 ""
+  "main.toc" 1761056111.19729 1730 c4ddaddc3a6f58d7bc0f8de0ef00bdb4 "pdflatex"
   "z_Assets/Graphics/Schematics/Ramjet_P280b.jpg" 1760513370 9532 32a2b7e5b58836c0625a5da97b57220f ""
   "z_Assets/Graphics/Schematics/Turbo_ram_scramjet_comparative_diagram.svg-1.png" 1760513370 114794 cb8a361f1ffc67223c82bc58d41b8b83 ""
   "z_Assets/Images/Duhovka-logo.png" 1760513370 23231 f1a0559d5549f45093d3164beb95e954 ""

@@ -15,6 +15,7 @@
 
 \usepackage{threeparttable}
 \usepackage{tabularx}
+\usepackage{adjustbox}
 \usepackage{multirow}
 
 \setcounter{secnumdepth}{4}
@@ -81,9 +82,10 @@
     \end{itemize}
 
    \begin{table}[H]
+     \begin{adjustbox}{minipage=\textwidth+135pt, center}
   \centering
   \begin{threeparttable}
-    \begin{tabularx}{\textwidth}{||c|c|c|c|c||}
+    \begin{tabular}{|| c | c | c | c | c ||}
       \hline \hline
       \multirow{2}{*}{\textbf{Propulsion Device}} &
         \multicolumn{3}{c}{\textbf{Energy Source}$^a$} &
@@ -113,7 +115,7 @@
       \hline
       Solar sail &  &  & TFD & Photon reflection (no stored propellant) \\
       \hline
-    \end{tabularx}
+    \end{tabular}
 
     \begin{tablenotes}
       \item[a] \textbf{D/P} developed and/or considered practical; 
@@ -125,6 +127,7 @@
     \caption{Energy Sources and Propellants for Various Propulsion Concepts\supercite{sutton2017}}
     \label{tab:1-1}
   \end{threeparttable}
+\end{adjustbox}
 \end{table} 
   
 
