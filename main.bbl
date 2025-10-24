@@ -47,6 +47,37 @@
       \verb en.wikipedia.org/wiki/Scramjet#/media/File:Turbo_ram_scramjet_comparative_diagram.svg
       \endverb
     \endentry
+    \entry{minami2018}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=14b75340199997d16948264a184eab31}{%
+           family={Minami},
+           familyi={M\bibinitperiod},
+           given={Yoshinari},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8d6ff8a03549e48e41388ecaa932c663}{%
+           family={Froning},
+           familyi={F\bibinitperiod},
+           given={Herman\bibnamedelima David},
+           giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nova Science Publishers}%
+      }
+      \strng{namehash}{697e11514a0552bbd80283b1094da887}
+      \strng{fullhash}{697e11514a0552bbd80283b1094da887}
+      \strng{fullhashraw}{697e11514a0552bbd80283b1094da887}
+      \strng{bibnamehash}{697e11514a0552bbd80283b1094da887}
+      \strng{authorbibnamehash}{697e11514a0552bbd80283b1094da887}
+      \strng{authornamehash}{697e11514a0552bbd80283b1094da887}
+      \strng{authorfullhash}{697e11514a0552bbd80283b1094da887}
+      \strng{authorfullhashraw}{697e11514a0552bbd80283b1094da887}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Field Propulsion Physics and Intergalactic Exploration}
+      \field{year}{2018}
+    \endentry
     \entry{Nasa_ramjet-schematic}{online}{}{}
       \name{author}{1}{}{%
         {{hash=1f99771bc3e23e6097509a331544ab65}{%
