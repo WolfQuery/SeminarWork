@@ -106,6 +106,39 @@
       \verb web.archive.org/web/20110222032757/history.nasa.gov/SP-4404/app-b7.htm
       \endverb
     \endentry
+    \entry{neufeld1995}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c7f81c4bef3af90cf96aaaba3743ab2d}{%
+           family={Neufield},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {New York: The Free P}%
+      }
+      \strng{namehash}{c7f81c4bef3af90cf96aaaba3743ab2d}
+      \strng{fullhash}{c7f81c4bef3af90cf96aaaba3743ab2d}
+      \strng{fullhashraw}{c7f81c4bef3af90cf96aaaba3743ab2d}
+      \strng{bibnamehash}{c7f81c4bef3af90cf96aaaba3743ab2d}
+      \strng{authorbibnamehash}{c7f81c4bef3af90cf96aaaba3743ab2d}
+      \strng{authornamehash}{c7f81c4bef3af90cf96aaaba3743ab2d}
+      \strng{authorfullhash}{c7f81c4bef3af90cf96aaaba3743ab2d}
+      \strng{authorfullhashraw}{c7f81c4bef3af90cf96aaaba3743ab2d}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{"Accessed via the Internet Archive on October 29th, 2025"}
+      \field{title}{The rocket and the reich : Peenemünde and the coming of the ballistic missile era}
+      \field{year}{1995}
+      \verb{urlraw}
+      \verb "archive.org/details/isbn_9780029228951"
+      \endverb
+      \verb{url}
+      \verb archive.org/details/isbn_9780029228951
+      \endverb
+    \endentry
     \entry{segal2009}{book}{}{}
       \name{author}{1}{}{%
         {{hash=2a988d53a4b23f38944f650ac4f3d901}{%
@@ -160,6 +193,7 @@
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{edition}{9th}
       \field{title}{Rocket propulsion elements}
       \field{year}{2017}
     \endentry
@@ -248,9 +282,8 @@
       \field{year}{2008}
     \endentry
   \enddatalist
-  \missing{Goebel2008}
-  \missing{borowski1995}
-  \missing{humble1995}
+  \missing{chertok2005}
+  \missing{spacex2020}
 \endrefsection
 \endinput
 

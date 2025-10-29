@@ -1,4 +1,3 @@
-
 \documentclass[titlepage, 12pt, a4paper, english]{report}
 
 %%% packages %%%
@@ -219,35 +218,51 @@
       Rocket propulsion is based fundamentally on \textit{Newton’s Third Law of Motion} — for every action, there is an equal and opposite reaction. In a rocket engine, the “action” is the high-velocity expulsion of exhaust gases, while the “reaction” propels the vehicle forward. Unlike air-breathing engines, rockets carry both fuel and oxidizer, allowing them to function in the vacuum of space.\supercite{sutton2017}
 
 \subsubsubsection{Chemical Rocket Engines}
-Chemical propulsion remains the most widely used method of achieving thrust in spaceflight. It relies on the combustion of chemical propellants that release large amounts of thermal energy, which is converted into kinetic energy of the exhaust gases. Two major types exist: \textit{solid} and \textit{liquid} rocket engines.
+Chemical propulsion remains the most widely used method of achieving thrust in spaceflight. It relies on the combustion of chemical propellants that release large amounts of thermal energy, which is converted into kinetic energy of the exhaust gases. Two major types exist: \textit{solid} and \textit{liquid} rocket engines.\supercite{sutton2017}
 
 \subsubsubsubsection{Solid Rocket Engines}
-Solid rocket motors use propellants in a single solid mixture, often consisting of a powdered oxidizer (such as ammonium perchlorate) combined with a binder that also acts as fuel. They are mechanically simple, capable of long storage, and deliver high thrust rapidly after ignition. However, they cannot be throttled or shut down once ignited, limiting flexibility.\supercite{humble1995}
+Solid rocket motors use propellants in a single solid mixture, often consisting of a powdered oxidizer (such as ammonium perchlorate) combined with a binder that also acts as fuel. They are mechanically simple, capable of long storage, and deliver high thrust rapidly after ignition. However, they cannot be throttled or shut down once ignited, limiting flexibility.\supercite{sutton2017}
 
 \subsubsubsubsection{Liquid Rocket Engines}
 Liquid-propellant engines store the oxidizer and fuel in separate tanks and feed them into a combustion chamber using pumps or pressurization. The most common combinations are RP-1 (refined kerosene) with liquid oxygen (\ce{LOX}), or liquid hydrogen (\ce{LH2}) with \ce{LOX}. They can be throttled, restarted, and provide high efficiency but require complex plumbing and cryogenic storage.\supercite{sutton2017}
 
 \subsubsubsubsection{Hybrid Rocket Engines}
-A hybrid rocket uses a combination of a liquid oxidizer and a solid fuel. This design offers a compromise between the safety of solid motors and the controllability of liquid systems. Notable examples include SpaceShipOne’s nitrous oxide (\ce{N2O}) and hydroxyl-terminated polybutadiene (\ce{HTPB}) hybrid engine.\supercite{humble1995}
+A hybrid rocket uses a combination of a liquid oxidizer and a solid fuel. This design offers a compromise between the safety of solid motors and the controllability of liquid systems. Notable examples include SpaceShipOne’s nitrous oxide (\ce{N2O}) and hydroxyl-terminated polybutadiene (\ce{HTPB}) hybrid engine.\supercite{sutton2017}
 
 \subsubsubsection{Non-Chemical Rocket Engines}
 Beyond chemical propulsion, various non-chemical systems have been developed to improve efficiency and endurance for deep-space missions.
 
 \subsubsubsubsection{Electric Propulsion}
-Electric propulsion systems, such as ion and Hall-effect thrusters, use electrical energy (from solar arrays or nuclear sources) to accelerate charged particles. They produce low thrust but extremely high specific impulse, making them ideal for long-duration missions where gradual acceleration is acceptable.\supercite{Goebel2008}
+Electric propulsion systems, such as ion and Hall-effect thrusters, use electrical energy (from solar arrays or nuclear sources) to accelerate charged particles. They produce low thrust but extremely high specific impulse, making them ideal for long-duration missions where gradual acceleration is acceptable.\supercite{sutton2017}
 
 \subsubsubsubsection{Nuclear Thermal Propulsion (NTP)}
-In nuclear thermal systems, a nuclear reactor heats a propellant—typically hydrogen—to extremely high temperatures before expansion through a nozzle. This method can theoretically double the specific impulse compared to chemical rockets, offering a promising balance between power and efficiency for interplanetary travel.\supercite{borowski1995}
+In nuclear thermal systems, a nuclear reactor heats a propellant—typically hydrogen—to extremely high temperatures before expansion through a nozzle. This method can theoretically double the specific impulse compared to chemical rockets, offering a promising balance between power and efficiency for interplanetary travel.\supercite{sutton2017}
 
 
   \subsection{The First Rocket to Reach Space}
-    (Discuss V-2 and its influence on later designs.)
-  \subsection{The Saturn V F-1 Engine}
+    The German \textit{Aggregat-4}, better known as the \textit{V-2 rocket}, was the first human-made object to reach the edge of space. Developed under the direction of Wernher von Braun during World War II, the V-2 achieved suborbital altitudes exceeding 80~km in 1944 and was capable of carrying a 1-ton warhead to a range of about 320~km.\supercite{neufeld1995}
+\\
+
+The V-2 used a liquid-propellant engine burning ethanol and liquid oxygen in a gas-generator cycle, producing roughly 25 metric tons of thrust. Its innovations—including turbopumps, gyroscopic guidance, and regenerative cooling—formed the foundation of post-war rocket programs in both the United States and the Soviet Union. The American Redstone and Jupiter missiles, as well as the Soviet R-7 that launched \textit{Sputnik}, directly descended from V-2 technology.\supercite{neufeld1995}
+
+   \subsection{The Saturn V F-1 Engine}
   The engine who got man to the moon upon the widely known Saturn V rocket was the Rocketdyne F-1 gas-generator cycle single combustion chamber liquid-propellant rocket engine.\supercite{young2008}
+\\
 
     It is the most powerful single-nozzle liquid-fueled engine ever used and was placed upon the first stage of Saturn V.\supercite{young2008}
   \subsection{Post-Saturn Developments}
-    (Space Shuttle Main Engine, RD-170, Merlin, Raptor, etc.)
+  Following the success of the Saturn~V, rocket propulsion entered a new era marked by reusability, efficiency, and high-performance engines.
+
+\subsubsection{Space Shuttle Main Engine (SSME)}
+NASA’s Space Shuttle Main Engine (RS-25) represented a leap in reusable liquid propulsion. It was a staged-combustion hydrogen–oxygen engine capable of being throttled between 65\% and 109\% thrust. Each RS-25 generated about 1.8~MN of thrust and could be reused up to 55 times.\supercite{young2008}
+
+\subsubsection{Soviet and Russian Advances}
+In the Soviet Union, engineers developed the RD-170 and its derivatives, the world’s most powerful liquid rocket engines by total thrust (7.9~MN). These engines used a closed-cycle staged combustion process with kerosene and LOX, achieving exceptional efficiency and reliability, later adapted for Zenit and Atlas launch vehicles.\supercite{chertok2005}
+\\
+
+\subsubsection{Modern Developments: Merlin and Raptor}
+SpaceX’s \textit{Merlin} engines, used on the Falcon 9, utilize RP-1 and LOX in a gas-generator cycle optimized for reusability. The newer \textit{Raptor} engine, employing methane and LOX in a full-flow staged combustion cycle, represents one of the most advanced chemical rocket engines ever built. Its design emphasizes reusability, efficiency, and adaptability for interplanetary missions, particularly SpaceX’s Starship program aimed at Mars colonization.\supercite{spacex2020}
+
   \subsection{Emerging Propulsion Technologies}
     % (Ion engines, nuclear thermal propulsion, solar sails, and antimatter or fusion concepts.)
     As mentioned at the beginning of this work, there still are ideas and possible engines that have yet to depart the zone of science fiction as either our technology isn't advanced enough to produce and test such engines or they have been demonstrated to not be technically effective for their complexity/price or we have no use for them yet. I shall talk about a select few of these in the following parts. Mainly the following:
