@@ -21,8 +21,13 @@
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
+\usepackage{mhchem}
 \newcommand{\subsubsubsection}[1]{
     \paragraph{#1}\mbox{}\\
+}
+
+\newcommand{\subsubsubsubsection}[1]{
+  \subparagraph{#1}\mbox{}\\
 }
 
 
@@ -210,8 +215,29 @@
 
 
 
-    \subsubsection{Rocket Propulsion}
-      (Describe chemical and non-chemical rockets, key principles like Newton’s Third Law.)
+      \subsubsection{Rocket Propulsion}
+      Rocket propulsion is based fundamentally on \textit{Newton’s Third Law of Motion} — for every action, there is an equal and opposite reaction. In a rocket engine, the “action” is the high-velocity expulsion of exhaust gases, while the “reaction” propels the vehicle forward. Unlike air-breathing engines, rockets carry both fuel and oxidizer, allowing them to function in the vacuum of space.\supercite{sutton2017}
+
+\subsubsubsection{Chemical Rocket Engines}
+Chemical propulsion remains the most widely used method of achieving thrust in spaceflight. It relies on the combustion of chemical propellants that release large amounts of thermal energy, which is converted into kinetic energy of the exhaust gases. Two major types exist: \textit{solid} and \textit{liquid} rocket engines.
+
+\subsubsubsubsection{Solid Rocket Engines}
+Solid rocket motors use propellants in a single solid mixture, often consisting of a powdered oxidizer (such as ammonium perchlorate) combined with a binder that also acts as fuel. They are mechanically simple, capable of long storage, and deliver high thrust rapidly after ignition. However, they cannot be throttled or shut down once ignited, limiting flexibility.\supercite{humble1995}
+
+\subsubsubsubsection{Liquid Rocket Engines}
+Liquid-propellant engines store the oxidizer and fuel in separate tanks and feed them into a combustion chamber using pumps or pressurization. The most common combinations are RP-1 (refined kerosene) with liquid oxygen (\ce{LOX}), or liquid hydrogen (\ce{LH2}) with \ce{LOX}. They can be throttled, restarted, and provide high efficiency but require complex plumbing and cryogenic storage.\supercite{sutton2017}
+
+\subsubsubsubsection{Hybrid Rocket Engines}
+A hybrid rocket uses a combination of a liquid oxidizer and a solid fuel. This design offers a compromise between the safety of solid motors and the controllability of liquid systems. Notable examples include SpaceShipOne’s nitrous oxide (\ce{N2O}) and hydroxyl-terminated polybutadiene (\ce{HTPB}) hybrid engine.\supercite{humble1995}
+
+\subsubsubsection{Non-Chemical Rocket Engines}
+Beyond chemical propulsion, various non-chemical systems have been developed to improve efficiency and endurance for deep-space missions.
+
+\subsubsubsubsection{Electric Propulsion}
+Electric propulsion systems, such as ion and Hall-effect thrusters, use electrical energy (from solar arrays or nuclear sources) to accelerate charged particles. They produce low thrust but extremely high specific impulse, making them ideal for long-duration missions where gradual acceleration is acceptable.\supercite{Goebel2008}
+
+\subsubsubsubsection{Nuclear Thermal Propulsion (NTP)}
+In nuclear thermal systems, a nuclear reactor heats a propellant—typically hydrogen—to extremely high temperatures before expansion through a nozzle. This method can theoretically double the specific impulse compared to chemical rockets, offering a promising balance between power and efficiency for interplanetary travel.\supercite{borowski1995}
 
 
   \subsection{The First Rocket to Reach Space}
@@ -266,7 +292,8 @@
       \begin{equation} \label{eq:Specific Impulse}
         I_s = \frac{\int_{0}^{t}Fdt}{g_{0} \int_0^t \dot{m}dt}
       \end{equation}
-
+  \subsubsection{General Theory of Relativity}
+    
       \printbibliography[title=Bibliography]
 
 \end{document}
