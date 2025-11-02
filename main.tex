@@ -63,8 +63,9 @@
   %% INTRODUCTION %%
   \section{Introduction}
     \subsection{Objectives and Structure of the Work}
-      (Outline what this paper aims to achieve and how it is structured.)
+      This Seminar work aims to explain and innovate on the rich history of rocket engines we as a civilization have as well as theorize on the possible directions we could improve this in the future. \\
 
+      The paper is structured as follows. Firstly, a brief introduction to the background and motivation of this work and humanity's strive for the stars. Secondly, a theoretical part explaining the basics and different types of engines (both air breathing and combustion) currently in use. Further on a relatively breath walkdown of the historical evolution of rocket engines and lastly some more theoretical projects and frameworks for better, faster and more effective propulsion. Thirdly, a practical part where I utilize NPSS and attempt to improve on current models and design a possible liquid fuel rocket engine, with the results of simulations ran on it. Last, but certainly not least is the conclusion in which I summarize this work and evaluate if it has succeeded in the goals I've set for myself and the results of the practical part. 
     \subsection{Background and Motivation}
       (Discuss why humanity strives for space and interstellar travel, and how propulsion technology is central to that goal.)
 
@@ -308,9 +309,54 @@ The V-2 used a liquid-propellant engine burning ethanol and liquid oxygen in a g
 \end{figure}
 
    \subsection{The Saturn V F-1 Engine}
-      
+  The engine who got man to the moon upon the widely known Saturn V rocket was the Rocketdyne F-1 gas-generator cycle single combustion chamber liquid-propellant rocket engine.\supercite{young2008}
+\\
 
-   \subsection{Post-Saturn Developments}
+    It is the most powerful single-nozzle liquid-fueled engine ever used and was placed upon the first stage of Saturn V.\supercite{young2008}
+  \begin{table}[H]
+  \centering
+  \begin{threeparttable}
+    \begin{tabular}{|| c | c ||}
+      \hline
+      \textbf{TYPE} & \textbf{SPECIFICATION} \\
+      \hline \hline
+      Length & 19ft \\
+      \hline
+      Width & 12ft 4in \\
+      \hline
+      Thrust (sea level) & 1,500,000 lbs \\
+      \hline
+      Specific Impulse (minimun) & 260 sec \\
+      \hline
+      Rated run duration & 150 sec \\
+      \hline
+      \multirow{2}{*}{Flowrate} & \textit{Oxidizer: } 3,945 lbs/sec (24,811 gpm) \\
+      \cline{2-2}
+        &\textit{Fuel: } 1,738 lbs/sec (15,471 gpm)\\
+      \hline
+      Mixture ratio & 2.27:1 (oxidizer to fuel)\\
+      \hline
+      Chamber pressure & 965 psia\\
+      \hline
+      Weight flight configuration & 18,500 lbs maximum\\
+      \hline
+      \multirow{2}{*}{Expansion area ratio} & 16:1 (with nozzle extension)\\
+      \cline{2-2}
+       & 10:1 (without nozzle extension)\\
+      \hline
+      \multirow{2}{*}{Combustion temperature} & \textit{Thrust Chamber} 5,970°F\\
+      \cline{2-2}
+       & \textit{Gas Generator} 1,465°F\\
+       \hline
+      Maximum exit nozzle diameter & 11ft 7in\\
+      \hline
+  \end{tabular}
+  \caption{Technical specifications of the F-1 Engine.\supercite{young2008}}
+  \begin{tablenotes}
+  \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+  \subsection{Post-Saturn Developments}
   Following the success of the Saturn~V, rocket propulsion entered a new era marked by reusability, efficiency, and high-performance engines.
 
 \subsubsection{Space Shuttle Main Engine (SSME)}
@@ -358,7 +404,59 @@ These speculative frameworks demonstrate the profound link between physics and e
 
   %% PRACTICAL PART %%
 	\section{Practical Part}
-	  \subsection{Hypothesis}
+	  \subsection{Methodics}
+In this practical part I will use the software  \textit{Numerical Propulsion System Simulation} (NPSS) to design a liquid‑propellant rocket engine.  
+The aim is to follow a clear, ordered method so that the engine model is built, simulated, and analysed step by step.
+
+\begin{enumerate}
+  \item \textbf{Define the design requirements}
+    \begin{itemize}
+      \item Choose the engine’s purpose (for example: first stage of a launch vehicle, sea‑level take‑off).  
+      \item Select the propellants (for example RP‑1 + LOX, or LH₂ + LOX).  
+      \item Set the main targets: thrust (in Newtons or kN), burn time (seconds), maximum allowable engine mass, and operating environment (sea level vs vacuum).
+    \end{itemize}
+
+  \item \textbf{Select the engine cycle & make initial assumptions} 
+    \begin{itemize}
+      \item Decide on the engine cycle type (gas‑generator, staged‑combustion, etc.).  
+      \item Make initial assumptions: chamber pressure, mixture ratio (oxidiser : fuel), expansion ratio of the nozzle.  
+      \item Note constraints: engine size, material limits, cooling, manufacturability.
+    \end{itemize}
+
+  \item \textbf{Build the NPSS model}
+    \begin{itemize}
+      \item Set up NPSS with the main components: feed system, pumps/turbines, combustion chamber, nozzle.  
+      \item Input the assumed parameters: mass flows, pressures, temperatures, geometry (for example throat area, exit area).  
+      \item Run the simulation for the “design‑point” (the normal operating condition).
+    \end{itemize}
+
+  \item \textbf{Analyse the design‑point results}
+    \begin{itemize}
+      \item Extract performance data: thrust, specific impulse ($I_{\!sp}$), propellant mass flow, chamber and nozzle pressures and temperatures.  
+      \item Compare the results with your design targets from Step 1. If the targets are not met, return to Step 2 (adjust assumptions) or Step 3 (modify model) and iterate.
+    \end{itemize}
+
+  \item \textbf{Perform parametric / sensitivity studies}
+    \begin{itemize}
+      \item Vary one parameter at a time (for example mixture ratio, chamber pressure, expansion ratio) and see how performance changes.  
+      \item Record which parameters have the largest effect (sensitivity) and find trade‑offs (for example higher chamber pressure improves $I_{\!sp}$ but may increase mass or cost).  
+      \item Use these findings to refine your design toward a better balance.
+    \end{itemize}
+
+  \item \textbf{Check off‑design / operating range conditions}
+    \begin{itemize}
+      \item Use NPSS to simulate the engine under different conditions: for example different ambient pressures (sea level vs high altitude), partial throttle or start‑up conditions.  
+      \item Determine how performance changes under these conditions: does thrust drop? does $I_{\!sp}$ fall? Are there stability problems?
+    \end{itemize}
+
+  \item \textbf{Document and reflect on the results}
+    \begin{itemize}
+      \item Prepare tables and graphs presenting your results (design point outputs, parametric study results).  
+      \item Discuss your assumptions (for example: ignoring cooling losses, assuming ideal pumps) and their impact.  
+      \item Reflect on what you would do differently if you had more time or resources, and what the limits of your design are.
+    \end{itemize}
+\end{enumerate}
+
 	\section{Conclusion}
 	
   \appendix
