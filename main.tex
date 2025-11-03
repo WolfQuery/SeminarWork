@@ -5,7 +5,7 @@
 
 \usepackage{graphicx}
 
-\usepackage[backend=biber,citestyle=numeric-comp,bibstyle=mla-new]{biblatex}
+\usepackage[backend=biber,citestyle=numeric-comp,bibstyle=numeric]{biblatex}
 \addbibresource{./references.bib}
 
 \usepackage{mathptmx}
@@ -20,7 +20,7 @@
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
-\usepackage{mhchem}
+\usepackage[version=4]{mhchem}
 \newcommand{\subsubsubsection}[1]{
     \paragraph{#1}\mbox{}\\
 }
@@ -65,7 +65,7 @@
     \subsection{Objectives and Structure of the Work}
       This Seminar work aims to explain and innovate on the rich history of rocket engines we as a civilization have as well as theorize on the possible directions we could improve this in the future. \\
 
-      The paper is structured as follows. Firstly, a brief introduction to the background and motivation of this work and humanity's strive for the stars. Secondly, a theoretical part explaining the basics and different types of engines (both air breathing and combustion) currently in use. Further on a relatively breath walkdown of the historical evolution of rocket engines and lastly some more theoretical projects and frameworks for better, faster and more effective propulsion. Thirdly, a practical part where I utilize NPSS and attempt to improve on current models and design a possible liquid fuel rocket engine, with the results of simulations ran on it. Last, but certainly not least is the conclusion in which I summarize this work and evaluate if it has succeeded in the goals I've set for myself and the results of the practical part. 
+      The paper is structured as follows. Firstly, a brief introduction to the background and motivation of this work and humanity's strive for the stars. Secondly, a theoretical part explaining the basics and different types of engines (both air breathing and combustion) currently in use. Further on a relatively breath walkdown of the historical evolution of rocket engines and lastly some more theoretical projects and frameworks for better, faster and more effective propulsion. Thirdly, a practical part where I utilize NPSS and attempt to improve on current models and design a possible liquid fuel rocket engine, with the results of simulations ran on it. Last, but certainly not least is the conclusion in which I summarize this work and evaluate if it has succeeded in the goals I've set for myself and the results of the practical part.
     \subsection{Background and Motivation}
       (Discuss why humanity strives for space and interstellar travel, and how propulsion technology is central to that goal.)
 
@@ -93,7 +93,7 @@
     \begin{tabular}{|| c | c | c | c | c ||}
       \hline \hline
       \multirow{2}{*}{\textbf{Propulsion Device}} &
-        \multicolumn{3}{c}{\textbf{Energy Source}$^a$} &
+        \multicolumn{3}{| c |}{\textbf{Energy Source}$^a$} &
         \multirow{2}{*}{\textbf{Propellant or Working Fluid}} \\
         \cline{2-4}
       & Chemical & Nuclear & Solar & \\
@@ -352,8 +352,6 @@ The V-2 used a liquid-propellant engine burning ethanol and liquid oxygen in a g
       \hline
   \end{tabular}
   \caption{Technical specifications of the F-1 Engine.\supercite{young2008}}
-  \begin{tablenotes}
-  \end{tablenotes}
   \end{threeparttable}
 \end{table}
   \subsection{Post-Saturn Developments}
@@ -412,14 +410,14 @@ The aim is to follow a clear, ordered method so that the engine model is built, 
   \item \textbf{Define the design requirements}
     \begin{itemize}
       \item Choose the engine’s purpose (for example: first stage of a launch vehicle, sea‑level take‑off).  
-      \item Select the propellants (for example RP‑1 + LOX, or LH₂ + LOX).  
+      \item Select the propellants (for example RP‑1 + LOX, or \ce{LH2} + LOX).  
       \item Set the main targets: thrust (in Newtons or kN), burn time (seconds), maximum allowable engine mass, and operating environment (sea level vs vacuum).
     \end{itemize}
 
-  \item \textbf{Select the engine cycle & make initial assumptions} 
+  \item \textbf{Select the engine cycle \& make initial assumptions} 
     \begin{itemize}
       \item Decide on the engine cycle type (gas‑generator, staged‑combustion, etc.).  
-      \item Make initial assumptions: chamber pressure, mixture ratio (oxidiser : fuel), expansion ratio of the nozzle.  
+      \item Make initial assumptions: chamber pressure, mixture ratio (oxidiser : fuel), expansion ratio of the nozzle.  
       \item Note constraints: engine size, material limits, cooling, manufacturability.
     \end{itemize}
 
@@ -433,7 +431,7 @@ The aim is to follow a clear, ordered method so that the engine model is built, 
   \item \textbf{Analyse the design‑point results}
     \begin{itemize}
       \item Extract performance data: thrust, specific impulse ($I_{\!sp}$), propellant mass flow, chamber and nozzle pressures and temperatures.  
-      \item Compare the results with your design targets from Step 1. If the targets are not met, return to Step 2 (adjust assumptions) or Step 3 (modify model) and iterate.
+      \item Compare the results with your design targets from Step 1. If the targets are not met, return to Step 2 (adjust assumptions) or Step 3 (modify model) and iterate.
     \end{itemize}
 
   \item \textbf{Perform parametric / sensitivity studies}
@@ -453,7 +451,7 @@ The aim is to follow a clear, ordered method so that the engine model is built, 
     \begin{itemize}
       \item Prepare tables and graphs presenting your results (design point outputs, parametric study results).  
       \item Discuss your assumptions (for example: ignoring cooling losses, assuming ideal pumps) and their impact.  
-      \item Reflect on what you would do differently if you had more time or resources, and what the limits of your design are.
+      \item Reflect on what I would do differently if you had more time or resources, and what the limits of my design are.
     \end{itemize}
 \end{enumerate}
 
@@ -481,7 +479,14 @@ The aim is to follow a clear, ordered method so that the engine model is built, 
         I_s = \frac{\int_{0}^{t}Fdt}{g_{0} \int_0^t \dot{m}dt}
       \end{equation}
   \subsubsection{General Theory of Relativity}
-    
-      \printbibliography[title=Bibliography]
+   
+      \section{Bibliography}
+    \printbibliography[type=book, title={Book Sources}]
+
+    \printbibliography[type=online, title={Online Sources}]
+
+    \printbibliography[type=misc, title={Miscellaneous Sources}]
+
+    \printbibliography[type=image, title={Images}]
 
 \end{document}
