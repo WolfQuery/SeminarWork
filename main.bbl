@@ -497,6 +497,34 @@
       \field{title}{Project Daedalus: The Propulsion System Part 1; Theoretical considerations and calculations. 2. Review of Advanced Propulsion Systems}
       \field{year}{n.d.}
     \endentry
+    \entry{spaceX-raptor}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
+           family={{Wikipedia Contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{bibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorbibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-29}
+      \field{title}{SpaceX Raptor}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/SpaceX_Raptor
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/SpaceX_Raptor
+      \endverb
+    \endentry
     \entry{Wiki_breakthrough_starshot}{online}{}{}
       \name{author}{1}{}{%
         {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
@@ -606,7 +634,6 @@
       \field{year}{2008}
     \endentry
   \enddatalist
-  \missing{spacex2020}
 \endrefsection
 \endinput
 
