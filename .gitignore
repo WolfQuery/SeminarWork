@@ -25,6 +25,7 @@
 *.ist
 *.bbl-SAVE-ERROR
 *.bcf-SAVE-ERROR
+*.synctex.gz
 
 # Temporary/editor files
 *~
