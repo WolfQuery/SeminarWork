@@ -1,0 +1,126 @@
+\chapter{Introduction}
+    \section{Objectives and Structure of the Work}
+      This Seminar work aims to explain and innovate on the rich history of rocket engines we as a civilization have as well as theorize on the possible directions we could improve this in the future. \\
+
+      The paper is structured as follows. Firstly, a brief introduction to the background and motivation of this work and humanity's strive for the stars. Secondly, a theoretical part explaining the basics and different types of engines (both air breathing and combustion) currently in use. Further on a relatively breath walkdown of the historical evolution of rocket engines and lastly some more theoretical projects and frameworks for better, faster and more effective propulsion. Thirdly, a practical part where I utilize NPSS and attempt to improve on current models and design a possible liquid fuel rocket engine, with the results of simulations ran on it. Last, but certainly not least is the conclusion in which I summarize this work and evaluate if it has succeeded in the goals I've set for myself and the results of the practical part.
+    \section{Background and Motivation}
+      Humanity has looked up at the starry night and wondered “What is out there?” since its beginning. Many cultures, both historically early (before the Common Era) and later (after) have given the sky and stars a significant position in theirreligions. The ancient Egyptians believed that stars were the destinations of souls ascending to the afterlife; Christianity holds concepts of Heaven among or beyond the stars. Other examples include the Babylonians who charted the sky and tied celestial events to divine influence, the Greeks who philosophised about the cosmos, and indigenous peoples whose cosmologies placed humans in relation to the night sky.
+
+        Since our discovery of flight, many have further wondered: “Could we reach them?”
+
+      \subsection{The era of space}
+      The mid-20th century marked a pivotal shift from dreaming about space to actually reaching into it. The colloquially known Space Race between the United States and the Soviet Union was driven by a combination of geopolitical rivalry, technological ambition, and human curiosity. The Soviets launched the first artificial satellite, Sputnik 1, in 1957, initiating the Space Age. In 1961 the Soviets sent Yuri Gagarin into orbit—the first human to travel into space. The United States followed with its Apollo programme, culminating in Apollo 11 landing humans on the Moon in 1969.
+        \\
+
+        Beyond symbolism, the space race demanded the development of new propulsion technologies, materials, life-support systems, and systems engineering. These developments laid the foundation for modern aerospace engineering.
+        \\
+
+        \subsection{Why do we strive for Space?}
+        Why has humanity been so drawn to space? In my own opinion, the answer to this question can be distilled into the following inter-related motivations:
+        \begin{itemize}
+        \item \textbf{Curiosity and the strive for knowledge:} The urge to explore, to understand the cosmos and our place within it, has driven astronomers, engineers and dreamers alike.
+        \item \textbf{Survival and expansion:} Some argue that humanity’s long-term survival may require becoming a multi-planet species, especially given planetary risks.
+        \item \textbf{Technological and economical value:} Space-based systems (satellites, communications, Earth observation) have become integral to modern life and economies.
+        \item \textbf{Inspiration and the search for identity:} Achievements in space serve as proof of human potential, inspiring new generations and influencing cultural identity.
+        \end{itemize}
+      
+        At the heart of all of these reasons lies propulsion technology. To move from Earth orbit to other celestial bodies (or even interstellar destinations) we require efficient, powerful, and reliable propulsion systems. Without them, the dream of reaching the stars remains just that—a dream. Advances in propulsion (chemical rockets, nuclear thermal, electric propulsion, solar sails and beyond) are critical enablers of space exploration, colonisation, and the realisation of humanity’s cosmic ambitions.
+
+
+        
+  \section{A brief history of rocket engines}
+  \subsection{Early Concepts and the First Rocket Engine}
+    (Briefly cover early gunpowder rockets and pioneers like Tsiolkovsky, Goddard, Oberth.)
+
+  \subsection{The First Rocket to Reach Space}
+    The German \textit{Aggregat-4}, better known as the \textit{V-2 rocket}, was the first human-made object to reach the edge of space. Developed under the direction of Wernher von Braun during World War II, the V-2 achieved suborbital altitudes exceeding 80~km in 1944 and was capable of carrying a 1-ton warhead to a range of about 320~km.\supercite{neufeld1995}
+
+    \begin{figure}[H]
+      \begin{center}
+        \includegraphics[width=0.5\textwidth]{z_Assets/Graphics/Photos/V-2_förbränningskammare.JPG}
+      \end{center}
+      \caption{Rocket engine used by V-2\supercite{Img_v2-engine}}\label{fig:rocket-engine-v2}
+    \end{figure}
+
+    \begin{figure}[H]
+      \begin{center}
+        \includegraphics[width=0.95\textwidth]{z_Assets/Graphics/Schematics/960px-Esquema_de_la_V-2.jpg}
+      \end{center}
+      \caption{A U.S. Army cut-away diagram of the V-2\supercite{Img_us-cutaway-v2}}\label{fig:us-army-cutaway-diagram-v2}
+    \end{figure}
+
+
+The V-2 used a liquid-propellant engine burning ethanol and liquid oxygen in a gas-generator cycle, producing roughly 25 metric tons of thrust. Its innovations—including turbopumps, gyroscopic guidance, and regenerative cooling—formed the foundation of post-war rocket programs in both the United States and the Soviet Union. The American Redstone and Jupiter missiles, as well as the Soviet R-7 that launched \textit{Sputnik}, directly descended from V-2 technology.\supercite{neufeld1995}
+
+\begin{figure}[H]
+      \begin{center}
+        \includegraphics[width=0.5\textwidth]{z_Assets/Graphics/Photos/Rocket_engine_A4_V2.jpg}
+      \end{center}
+      \caption{A sectioned V-2 engine on display at the Deutsches Museum, Munich (2006)\supercite{Img_sectioned-v2-engine}}\label{fig:}
+    \end{figure}
+   
+    \begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{z_Assets/Graphics/Schematics/Aggregat4-Schnitt-engl.jpg}
+  \end{center}
+  \caption{Layout of a V2 rocket\supercite{Img_v2-layout}}\label{fig:}
+\end{figure}
+
+   \subsection{The Saturn V F-1 Engine}
+  The engine who got man to the moon upon the widely known Saturn V rocket was the Rocketdyne F-1 gas-generator cycle single combustion chamber liquid-propellant rocket engine.\supercite{young2008}
+\\
+
+    It is the most powerful single-nozzle liquid-fueled engine ever used and was placed upon the first stage of Saturn V.\supercite{young2008}
+  \begin{table}[H]
+  \centering
+  \begin{threeparttable}
+    \begin{tabular}{|| c | c ||}
+      \hline
+      \textbf{TYPE} & \textbf{SPECIFICATION} \\
+      \hline \hline
+      Length & 19ft \\
+      \hline
+      Width & 12ft 4in \\
+      \hline
+      Thrust (sea level) & 1,500,000 lbs \\
+      \hline
+      Specific Impulse (minimun) & 260 sec \\
+      \hline
+      Rated run duration & 150 sec \\
+      \hline
+      \multirow{2}{*}{Flowrate} & \textit{Oxidizer: } 3,945 lbs/sec (24,811 gpm) \\
+      \cline{2-2}
+        &\textit{Fuel: } 1,738 lbs/sec (15,471 gpm)\\
+      \hline
+      Mixture ratio & 2.27:1 (oxidizer to fuel)\\
+      \hline
+      Chamber pressure & 965 psia\\
+      \hline
+      Weight flight configuration & 18,500 lbs maximum\\
+      \hline
+      \multirow{2}{*}{Expansion area ratio} & \textit{With nozzle extension:} 16:1 \\
+      \cline{2-2}
+        & \textit{Without nozzle extension:} 10:1\\
+      \hline
+      \multirow{2}{*}{Combustion temperature} & \textit{Thrust Chamber:} 5,970°F\\
+      \cline{2-2}
+       & \textit{Gas Generator:} 1,465°F\\
+       \hline
+      Maximum exit nozzle diameter & 11ft 7in\\
+      \hline
+  \end{tabular}
+  \caption{Technical specifications of the F-1 Engine.\supercite{young2008}}
+  \end{threeparttable}
+\end{table}
+  \subsection{Post-Saturn Developments}
+  Following the success of the Saturn~V, rocket propulsion entered a new era marked by reusability, efficiency, and high-performance engines.
+
+\subsubsection{Space Shuttle Main Engine (SSME)}
+NASA’s Space Shuttle Main Engine (RS-25) represented a leap in reusable liquid propulsion. It was a staged-combustion hydrogen–oxygen engine capable of being throttled between 65\% and 109\% thrust. Each RS-25 generated about 1.8~MN of thrust and could be reused up to 55 times.\supercite{young2008}
+
+\subsubsection{Soviet and Russian Advances}
+In the Soviet Union, engineers developed the RD-170 and its derivatives, the world’s most powerful liquid rocket engines by total thrust (7.9~MN). These engines used a closed-cycle staged combustion process with kerosene and LOX, achieving exceptional efficiency and reliability, later adapted for Zenit and Atlas launch vehicles.\supercite{chertok2012}
+\\
+
+\subsubsection{Modern Developments: Merlin and Raptor}
+SpaceX’s \textit{Merlin} engines, used on the Falcon 9, utilize RP-1 and LOX in a gas-generator cycle optimized for reusability. The newer \textit{Raptor} engine, employing methane and LOX in a full-flow staged combustion cycle, represents one of the most advanced chemical rocket engines ever built. Its design emphasizes reusability, efficiency, and adaptability for interplanetary missions, particularly SpaceX’s Starship program aimed at Mars colonization.\supercite{spaceX-raptor}

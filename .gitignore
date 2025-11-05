@@ -16,6 +16,8 @@
 !images/
 !img/
 !refs/
+!z_Assets/
+!parts/
 
 # Ignore all LaTeX build artifacts
 *.aux
