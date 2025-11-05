@@ -1,24 +1,3 @@
-# Ignore everything by default
-*
-
-# But keep these:
-!.gitignore
-!*.tex
-!*.bib
-!*.pdf
-!*.png
-!*.jpg
-!*.jpeg
-!*.svg
-!*.eps
-!*.pdf_tex
-!figures/
-!images/
-!img/
-!refs/
-!z_Assets/
-!parts/
-
 # Ignore all LaTeX build artifacts
 *.aux
 *.bbl
@@ -54,19 +33,4 @@
 *.backup
 *.autosave
 
-# Build directories
-build/
-out/
-_output/
-auto/
-tmp/
-
-# IDE/project files
-.vscode/
-.idea/
-*.code-workspace
-
-# System files
-.DS_Store
-Thumbs.db
 
