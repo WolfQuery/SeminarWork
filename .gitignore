@@ -23,6 +23,8 @@
 *.gls
 *.glsdefs
 *.ist
+*.bbl-SAVE-ERROR
+*.bcf-SAVE-ERROR
 
 # Temporary/editor files
 *~
