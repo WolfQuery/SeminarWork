@@ -244,33 +244,7 @@ These speculative frameworks demonstrate the profound link between physics and e
 
 \section{Rocket physics fundamentals}
 \subsection{Tsoilkovsky's Rocket Equation}
-Also called the \textit{Classical Rocket Equation} or \textit{Ideal Rocket Equation}. It describes the motion of vehicles based on the concept of a rocket, defined as "a device that can apply acceleration to itself using thrust by expelling part of its mass with high velocity and can thereby move due to the conservation of momentum".\supercite{Wiki_toilkovskys-equation}\\
-The maximum change of velociry of thr rocket, $\Delta v$ (with no extrenal forces acting) is:
-$$
-\Delta v = v_e ln \frac{m_0}{m_f} = I_{sp}g_0 ln\frac{m_0}{m_f}
-$$
-
-\begin{figure}[ht]
-  \centering
-  \begin{tikzpicture}
-    \begin{axis}[
-      xlabel={\(\Delta v / v_e\)},
-      ylabel={Mass ratio \(m_0/m_f\)},
-      domain=0:6,
-      samples=200,
-      grid=major,
-      log basis y = e,
-      ymax=500,
-      legend pos=north west
-    ]
-      \addplot[blue, thick] {exp(x)};
-      \addlegendentry{\(m_0/m_f = e^{\,\Delta v / v_e}\)}
-    \end{axis}
-  \end{tikzpicture}
-  \caption{Required mass ratio as a function of effective exhaust velocity ratio \(\Delta v/v_e\).}
-  \label{fig:massratio_vs_exhaustratio}
-\end{figure}
-
+Also called the \textit{Classical Rocket Equation} or \textit{Ideal Rocket Equation}. It describes the motion of vehicles based on the concept of a rocket, defined as "a device that can apply acceleration to itself using thrust by expelling part of its mass with high velocity and can thereby move due to the conservation of momentum".\supercite{Wiki_tosilkovksys-equation}
 \subsection{Escape velocity}
 \subsection{Coriolis Effect}
 \subsection{Nozzle flow and geometry}
