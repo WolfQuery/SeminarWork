@@ -249,13 +249,33 @@ The maximum change of velociry of thr rocket, $\Delta v$ (with no extrenal force
 $$
 \Delta v = v_e ln \frac{m_0}{m_f} = I_{sp}g_0 ln\frac{m_0}{m_f}
 $$
+where:
+\begin{itemize}
+  \item $v_e$ is the effective exhaust velocity (also equal to $I_{sp}g_0$)
+    \begin{itemize}
+      \item $I_{sp}$ is the specific impulse in the dimension of time
+      \item $g_0$ is standard gravity
+    \end{itemize}
+  \item $ln$ is the natural logarithm function
+  \item $m_0$ is the initial total mass, including propellant (i.e. "wet mass")
+  \item $m_f$ is the final total mass, excluding propellant (i.e. "dry mass")
+\end{itemize}
 
-\begin{figure}[ht]
+Due to the effective exhaust velocity being determined by rocket engine's design, the desired $\Delta v$ (e.g. orbital speed, or escape velocity), and a given dry mass ($m_f$), the equation can be solved for the required wet mass ($m_0$):
+$$
+m_0 = m_{f}e^{\Delta v/v_e}
+$$
+The required propellant mass is then: 
+$$
+m_0 - m_f = m_f(e^{\Delta v/v_e}-1)
+$$
+This shows us, as can be seen in Figure~\ref{fig:massratio_vs_exhaustratio}, that the nescessary wet mass grows exponentionally with the desired $\Delta v$.\supercite{Wiki_toilkovskys-equation}
+\begin{figure}[H]
   \centering
   \begin{tikzpicture}
     \begin{axis}[
       xlabel={\(\Delta v / v_e\)},
-      ylabel={Mass ratio \(m_0/m_f\)},
+      ylabel={Mass ratio: \(m_0/m_f\)},
       domain=0:6,
       samples=200,
       grid=major,
@@ -267,7 +287,7 @@ $$
       \addlegendentry{\(m_0/m_f = e^{\,\Delta v / v_e}\)}
     \end{axis}
   \end{tikzpicture}
-  \caption{Required mass ratio as a function of effective exhaust velocity ratio \(\Delta v/v_e\).}
+  \caption{Required mass ratio as a function of effective exhaust velocity ratio \(\Delta v/v_e\).\supercite{Wiki_toilkovskys-equation}}
   \label{fig:massratio_vs_exhaustratio}
 \end{figure}
 
