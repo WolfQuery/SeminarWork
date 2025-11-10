@@ -92,8 +92,13 @@
       \begin{equation} \label{eq:Specific Impulse}
         I_s = \frac{\int_{0}^{t}Fdt}{g_{0} \int_0^t \dot{m}dt}
       \end{equation}
-  
-    \printbibliography[type=book, title={Book Sources}]
+      
+      \defbibfilter{papers}{
+      type=article or
+      type=book
+      }
+ 
+      \printbibliography[filter=papers, title={Book and Article Sources}]
 
     \printbibliography[type=online, title={Online Sources}]
 

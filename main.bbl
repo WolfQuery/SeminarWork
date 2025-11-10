@@ -203,6 +203,66 @@
       \verb https://commons.wikimedia.org/wiki/File:Rocket_engine_A4_V2.jpg
       \endverb
     \endentry
+    \entry{doi:10.1021/acsomega.1c07050}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=906dfdb2a248a47273a8dc45c379dd5e}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Tianwen},
+           giveni={T\bibinitperiod}}}%
+        {{hash=49a5be157444e30989591a9b7e686682}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhongwei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f79ae7033eb4d0062661bfc9a777f68a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jingbin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=593cfc8160af12fe6de57bb1bb854b36}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yisu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=857fd3ed15a72c26d23825a89f6456af}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd43699f19c9c6f2fcc0253bcc0fd5f5}
+      \strng{fullhash}{637fe167db68a3da3e25bc11abfcee46}
+      \strng{fullhashraw}{637fe167db68a3da3e25bc11abfcee46}
+      \strng{bibnamehash}{bd43699f19c9c6f2fcc0253bcc0fd5f5}
+      \strng{authorbibnamehash}{bd43699f19c9c6f2fcc0253bcc0fd5f5}
+      \strng{authornamehash}{bd43699f19c9c6f2fcc0253bcc0fd5f5}
+      \strng{authorfullhash}{637fe167db68a3da3e25bc11abfcee46}
+      \strng{authorfullhashraw}{637fe167db68a3da3e25bc11abfcee46}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACS Omega}
+      \field{number}{11}
+      \field{title}{Effect of Nozzle Geometry on the Flow Dynamics and Resistance Inside and Outside the Cone-Straight Nozzle}
+      \field{volume}{7}
+      \field{year}{2022}
+      \field{pages}{9652\bibrangedash 9665}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1021/acsomega.1c07050
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/acsomega.1c07050
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acsomega.1c07050
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acsomega.1c07050
+      \endverb
+    \endentry
     \entry{Img_spaceshipone}{image}{}{}
       \name{author}{1}{}{%
         {{hash=684d2651fa6a888a48db30cb195bc66b}{%

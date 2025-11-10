@@ -314,5 +314,33 @@ This shows us, as can be seen in Figure~\ref{fig:massratio_vs_exhaustratio}, tha
 \end{figure}
 
 \subsection{Coriolis Force}
-Also known as the \textit{Coriolis effect}, the Coriolis force is a pseudo force that acts on objects in motion within a frame of reference that rotates with respect to an inertial frame. In a reference frame with clockwise rotation, the force acts to the left of the motion of the object. In one with anticlockwise (or counterclockwise) rotation, the force acts to the right.\supercite{Wiki_coriolis-force}
+Also known as the \textit{Coriolis effect}, the Coriolis force is a pseudo force that acts on objects in motion within a frame of reference that rotates with respect to an inertial frame. In a reference frame with clockwise rotation, the force acts to the left of the motion of the object. In one with anticlockwise (or counterclockwise) rotation, the force acts to the right. Deflection of an object due to the Coriolis force is called the Coriolis effect. \supercite{Wiki_coriolis-force}
+
+In Newtonian mechanics, the equation of motion for an object in an inertial reference frame is:
+$$
+F = ma
+$$
+where $F$ is the vector sum of the physical forces acting on the object, $m$ is the mass of the object and $a$ is the acceleration of the object relative to the inertial reference frame. Transforming this equation to a reference frame rotating about a fixed axis through the origin with angular velocity $\omega$ having variable rotation rate, the equation takes the 
+following form:
+$$
+F' = F-m\frac{d\omega}{dt}\times r'-2m\omega\times v' - m\omega\times (\omega\times r')
+$$
+where the prime ($'$) variables denote coordinates of the rotating reference frame (not a derivative) and: 
+\begin{itemize}
+  \item $F$ is the vector sum of the physical forces acting on the object.
+  \item $\omega$ is the angular velocity of the rotating reference frame relative to the inertial frame.
+  \item $r'$ is the position vector of the object relative to the rotating reference frame. 
+  \item $v'$ is the velocity of the object relative to the rotating reference frame.
+  \item $a'$ is the acceleration of the object relative to the rotating reference frame.
+\end{itemize}
+The fictitious forces as they are perceived in the rotating frame act as additional forces that contribute to the apparent acceleration just like the real external forces. The fictitious force terms of the equation are, reading from left to right:
+\begin{itemize}
+  \item Euler force: $-m\frac{d\omega}{dt}\times r'$
+  \item Coriolis force: $-2m(\omega\times v')$
+  \item Centrifugal force: $-m\omega\times(\omega\times r')$
+\end{itemize}
+As seen in these formulas the Euler and centrifugal forces depend on the position vector ($r'$) of the object, while the Coriolis force depends on the object's velocity ($v'$) as measured in the rotating reference frame. As expected, for a non-rotating inertial frame of reference ($\omega = 0$) the Coriolis force and all other fictitious forces disappear.
+
 \subsection{Nozzle flow and geometry}
+
+\supercite{doi:10.1021/acsomega.1c07050}
