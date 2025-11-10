@@ -250,7 +250,21 @@ Escaoe velocity can be defined as "the minimum speed needed for an object to esc
   \item No other gravity-producing objects exist."
 \end{itemize}
 while the term "velocity" is used colloquially, a more accurate represntation would be "speed" as it is independent of direction.
-
+Escape speed at a distance d from the center of a spherically symmetric primary body (such as a star or a planet) with mass M is given by the formula:
+$$
+v_e = \sqrt{\frac{2GM}{d}} = \sqrt{2gd}
+$$
+where:
+\begin{itemize}
+  \item $G$ is the universal gravitational constant ($G\approx 6.67\times 10^{-11}m^3\times kg^{-1}\times s^{-2}$)
+  \item $g = GM/d^2$ is the local gravitational acceleration (or the surface gravity, when d = r).
+\end{itemize}
+The value $GM$ is called the \textit{gravitational standard parameter}, or $\mu$.
+When given an initial speed $V$ greater than the escape speed $v_e$, the object will asymptotically approach the hyperboflic excess speed $v_{\infty}$, satisfying the equation:
+$$
+v_{\infty}^2 = V^2 - v_e^2
+$$
+for example, with the definitional value for standard gravity of $9.80665 m/s^2$, the escape velocity for Earth is $11.186\ km/s\ (40,270\ km/h)$.\supercite{Wiki_escape-velocity}
 \subsection{Tsoilkovsky's Rocket Equation}
 Also called the \textit{Classical Rocket Equation} or \textit{Ideal Rocket Equation}. It describes the motion of vehicles based on the concept of a rocket, defined as "a device that can apply acceleration to itself using thrust by expelling part of its mass with high velocity and can thereby move due to the conservation of momentum".\supercite{Wiki_toilkovskys-equation}\\
 The maximum change of velociry of thr rocket, $\Delta v$ (with no extrenal forces acting) is:
