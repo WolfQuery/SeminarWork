@@ -497,7 +497,7 @@
       \field{title}{Project Daedalus: The Propulsion System Part 1; Theoretical considerations and calculations. 2. Review of Advanced Propulsion Systems}
       \field{year}{n.d.}
     \endentry
-    \entry{Wiki_escape-velocity}{online}{}{}
+    \entry{Wiki_coriolis-force}{online}{}{}
       \name{author}{1}{}{%
         {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
            family={{Wikipedia Contributors}},
@@ -512,6 +512,35 @@
       \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
       \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-11-10}
+      \field{title}{Coriolis Effect}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Coriolis_force
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Coriolis_force
+      \endverb
+    \endentry
+    \entry{Wiki_escape-velocity}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
+           family={{Wikipedia Contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{bibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorbibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \field{extraname}{2}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -540,7 +569,7 @@
       \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -569,7 +598,7 @@
       \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
