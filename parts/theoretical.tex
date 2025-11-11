@@ -243,6 +243,12 @@ Proposed by Miguel Alcubierre in 1994, the \textit{warp drive} concept relies on
 These speculative frameworks demonstrate the profound link between physics and engineering in the pursuit of interstellar travel, emphasizing that humanity’s ultimate propulsion systems may rely as much on breakthroughs in fundamental science as on technological advancement.
 
 \section{Rocket physics fundamentals}
+\subsection{Specific Impulse}
+      The \textit{specific impulse $I_s$} represents the thrust per unit propellant "weight" flow rate. It is an important figure of merit of the performance of any rocket propulsion system, a concept similar to kilometers per liter or miles per hour as applied to an automobile. A higher number often indicates a better performance. If the total propellant mass flow rate is $\dot{m}$ and the standard acceleration of gravity is $g_0$ (with an \textit{average} value at the Earth's sea level of $9.8066\ m/sec^2$ or $32.174\ ft/sec^2$), then 
+      \begin{equation} \label{eq:Specific Impulse}
+        I_s = \frac{\int_{0}^{t}Fdt}{g_{0} \int_0^t \dot{m}dt}
+      \end{equation}
+
 \subsection{Escape velocity}
 Escaoe velocity can be defined as "the minimum speed needed for an object to escape from contact with or orbit of a primary body, assuming:
 \begin{itemize}
@@ -266,7 +272,7 @@ v_{\infty}^2 = V^2 - v_e^2
 $$
 for example, with the definitional value for standard gravity of $9.80665 m/s^2$, the escape velocity for Earth is $11.186\ km/s\ (40,270\ km/h)$.\supercite{Wiki_escape-velocity}
 \subsection{Tsoilkovsky's Rocket Equation}
-Also called the \textit{Classical Rocket Equation} or \textit{Ideal Rocket Equation}. It describes the motion of vehicles based on the concept of a rocket, defined as "a device that can apply acceleration to itself using thrust by expelling part of its mass with high velocity and can thereby move due to the conservation of momentum".\supercite{Wiki_toilkovskys-equation}\\
+Also called the \textit{Classical Rocket Equation} or \textit{Ideal Rocket Equation}. It describes the motion of vehicles based on the concept of a rocket, defined as "a device that can apply acceleration to itself using thrust by expelling part of its mass with high velocity and can thereby move due to the conservation of momentum".\supercite{Wiki_tsiolkovskys-equation}\\
 The maximum change of velociry of thr rocket, $\Delta v$ (with no extrenal forces acting) is:
 $$
 \Delta v = v_e ln \frac{m_0}{m_f} = I_{sp}g_0 ln\frac{m_0}{m_f}
@@ -342,5 +348,30 @@ The fictitious forces as they are perceived in the rotating frame act as additio
 As seen in these formulas the Euler and centrifugal forces depend on the position vector ($r'$) of the object, while the Coriolis force depends on the object's velocity ($v'$) as measured in the rotating reference frame. As expected, for a non-rotating inertial frame of reference ($\omega = 0$) the Coriolis force and all other fictitious forces disappear.
 
 \subsection{Nozzle flow and geometry}
+Rocket engine nozzles, also called propelling nozzles. They are usually of de Laval type (See Figure~\ref{fig:de-laval-nozzle}) used in a rocket engine to expand and accelerate combustion products to high supersonic velocities.\supercite{Wiki_rocket-nozzle}${}^;$\supercite{doi:10.1021/acsomega.1c07050}
 
-\supercite{doi:10.1021/acsomega.1c07050}
+Typically, the design of a nozzle aims to achieve maiximum thrust coefficient ($C_F$) potential, which acts as a strong multiplier to the exhaust velocity inherent to the combustion chamber alone (it's characteristic velocity ($c^*$, which is independent of nozzle design).\supercite{Wiki_rocket-nozzle}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.65\textwidth]{z_Assets/Graphics/Schematics/De_laval_nozzle.png}
+  \end{center}
+  \caption{A de Laval nozzle, showing approximate flow velocity increasing from green to red in the direction of flow\supercite{Img_de-laval-nozzle}}\label{fig:de-laval-nozzle}
+\end{figure}
+
+The analysis of gas flow through de Laval nozzles involves a number of concepts and simplifying assumptions:
+\begin{itemize}
+  \item The combustion gas is an ideal gas.
+  \item The gas flow is isentropic.
+  \item The gas flow rate is constant during the period of the propellant burn.
+  \item The gas flow rate is non-turbulent and axisymmetric from gas inlet to exhaust gas exit.
+  \item The flow is compressible as the fluid is a gas.
+\end{itemize}
+
+As the combustion gas enters the rocket nozzle, it is traveling at subsonic velocities. As the throat constricts, the gas is forced to accelerate until at the nozzle throat, where the cross-sectional area is the least, the linear velocity becomes sonic. From the throat the cross-sectional area then increases, the gas expands and the linear velocity becomes progressively more supersonic.
+
+The linear velocity of the exiting exhaust gases can be calculated using the following equation:
+$$
+v_e = \sqrt{\frac{TR}{M}\times\frac{2\gamma}{\gamma - 1}[1-(\frac{p_e}{p})^{\frac{\gamma -1}{\gamma}}]}
+$$
+
+

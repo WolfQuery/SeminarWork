@@ -615,7 +615,7 @@
       \verb https://en.wikipedia.org/wiki/Escape_velocity
       \endverb
     \endentry
-    \entry{spaceX-raptor}{online}{}{}
+    \entry{Wiki_rocket-nozzle}{online}{}{}
       \name{author}{1}{}{%
         {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
            family={{Wikipedia Contributors}},
@@ -630,6 +630,35 @@
       \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
       \field{extraname}{3}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-11-11}
+      \field{title}{Rocket engine nozzle}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Rocket_engine_nozzle
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Rocket_engine_nozzle
+      \endverb
+    \endentry
+    \entry{spaceX-raptor}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
+           family={{Wikipedia Contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{bibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorbibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \field{extraname}{4}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -658,7 +687,7 @@
       \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
-      \field{extraname}{4}
+      \field{extraname}{5}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -761,6 +790,35 @@
       \verb https://en.wikipedia.org/wiki/Scramjet
       \endverb
     \endentry
+    \entry{Img_de-laval-nozzle}{image}{}{}
+      \name{author}{1}{}{%
+        {{hash=a0b75d88a5224e13b5bf64dcabf4d003}{%
+           family={Wolfkeeper},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{fullhash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{fullhashraw}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{bibnamehash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{authorbibnamehash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{authornamehash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{authorfullhash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{authorfullhashraw}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{License: CC BY-SA 3.0}
+      \field{title}{De laval nozzle}
+      \field{type}{Schematic}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/File:De_laval_nozzle.svg
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/File:De_laval_nozzle.svg
+      \endverb
+    \endentry
     \entry{young2008}{book}{}{}
       \name{author}{1}{}{%
         {{hash=87edea6a8dfa8394892bd8126cadcc24}{%
@@ -788,6 +846,7 @@
       \field{year}{2008}
     \endentry
   \enddatalist
+  \missing{Wiki_tsiolkovskys-equation}
 \endrefsection
 \endinput
 
