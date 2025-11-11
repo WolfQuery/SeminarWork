@@ -673,7 +673,7 @@
       \verb https://en.wikipedia.org/wiki/SpaceX_Raptor
       \endverb
     \endentry
-    \entry{Wiki_toilkovskys-equation}{online}{}{}
+    \entry{Wiki_tsiolkovskys-equation}{online}{}{}
       \name{author}{1}{}{%
         {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
            family={{Wikipedia Contributors}},
@@ -846,7 +846,7 @@
       \field{year}{2008}
     \endentry
   \enddatalist
-  \missing{Wiki_tsiolkovskys-equation}
+  \missing{Wiki_toilkovskys-equation}
 \endrefsection
 \endinput
 

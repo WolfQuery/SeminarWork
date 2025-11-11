@@ -27,10 +27,9 @@
 
 \usepackage[version=4]{mhchem}
 
-\newcommand{\subsubsubsubsection}[1]{
-  \subparagraph{#1}\mbox{}\\
-}
-
+% We do a bit of trolling :3
+%\usepackage[T1]{fontenc}
+%\usepackage[math]{anttor}
 
 %%% title page %%%
 \pretitle{
@@ -62,11 +61,13 @@
 	
 	\tableofcontents
 	\newpage
-  %% INTRODUCTION %%
+  %% INTRODUCTION & HISTORY %%
   \include{parts/introduction.tex}
-  %% THEORETICAL PART %%
+  %% THEORETICAL BACKGROUND %%
   \include{parts/theoretical.tex}
-  %% PRACTICAL PART %%
+  %% IS INtERSTELLAR TRAVEL POSSIBLE? %%
+  %\include{parts/interstellar.tex} %%NOTE: SOČ prep %%
+  %% DESIGNING A LIQUID PROPELLANT ROCKET ENGINE %%
   \include{parts/practical.tex}
 	%% CONCLUSION %%
   \include{parts/conclusion.}
