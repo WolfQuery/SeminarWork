@@ -1,4 +1,4 @@
- \chapter{Theoretical Part}
+ \chapter{Theoretical Background}
          \section{Classification of Propulsion Systems}
 
     Propulsion is defined as \textit{"the action or process of propelling"} (\textit{"to drive forward or onward by or as if by means of a force that imparts motion"}). By the Merriam-Webster Dictionary. 
@@ -200,7 +200,7 @@ Electric propulsion systems, such as ion and Hall-effect thrusters, use electric
 In nuclear thermal systems, a nuclear reactor heats a propellant—typically hydrogen—to extremely high temperatures before expansion through a nozzle. This method can theoretically double the specific impulse compared to chemical rockets, offering a promising balance between power and efficiency for interplanetary travel.\supercite{sutton2017}
   \section{Emerging Propulsion Technologies}
     % (Ion engines, nuclear thermal propulsion, solar sails, and antimatter or fusion concepts.)
-    As mentioned at the beginning of this work, there still are ideas and possible engines that have yet to depart the zone of science fiction as either our technology isn't advanced enough to produce and test such engines or they have been demonstrated to not be technically effective for their complexity/price or we have no use for them yet. I shall talk about a select few of these in the following parts. Mainly the following:
+    As mentioned at the beginning of this work, there still are ideas and possible engines that have yet to depart the zone of science fiction as either our technology isn't advanced enough to produce and test such engines or they have been demonstrated to not be technically effective for their complexity/price or we have no use for them yet. I shall talk about Field Propulsion in the following part. The following is a list of most theoretical or partially already existing modes of propulsion:
     \begin{itemize}
       \item Nuclear Propulsion (both Fusion and Fission)
       \item Ion Engines 
@@ -209,17 +209,7 @@ In nuclear thermal systems, a nuclear reactor heats a propellant—typically hyd
       \item Field Propulsion
     \end{itemize}
 
-    \subsection{Nuclear Propulsion}
-    \subsubsection{Fusion}
-    \subsubsection{Fission}
-
-    \subsection{Ion Engines}
-
-    \subsection{Solar Sails}
-
-    \subsection{Antimatter Engines}
-
-    \subsection{Field Propulsion}
+        \subsection{Field Propulsion}
   Field propulsion, as defined by Yoshinari Minami is the act of propulsion not by usual means of momentum thrust, but instead by pressure thrust derived from an interaction of a spaceship with the physical structure of space-time. (Assuming that space as a vacuum possesses a substantial physical structure.)\supercite{minami2018}\\
 
     As the theory stands, field propulsion remains speculative and has not yet been experimentally demonstrated. It arises from the idea that spacetime itself may be manipulated to create a net force on a spacecraft without the expulsion of reaction mass. Concepts such as the \textit{Alcubierre warp drive}, derived from solutions to Einstein’s field equations, suggest that spacetime could theoretically be contracted in front of and expanded behind a spacecraft, allowing apparent faster-than-light travel.\supercite{minami2018}
@@ -243,9 +233,48 @@ Proposed by Miguel Alcubierre in 1994, the \textit{warp drive} concept relies on
 These speculative frameworks demonstrate the profound link between physics and engineering in the pursuit of interstellar travel, emphasizing that humanity’s ultimate propulsion systems may rely as much on breakthroughs in fundamental science as on technological advancement.
 
 \section{Rocket physics fundamentals}
+\subsection{Mach Number}
+      The Mach number (M or Ma), often only Mach, is a dimensionless quantity in fluid dynamics representing the ratio of flow velocity past a boundary to the local speed of sound.\supercite{Wiki_mach-number}
+      \begin{equation} \label{eq:Mach Number}
+          M = \frac{u}{c}
+      \end{equation}
+      where:
+      \begin{itemize}
+        \item $M$ is the local Mach number,\supercite{Wiki_mach-number}
+        \item $u$ is the local flow velocity with respect to the boundaries (either internal, such as an object immersed in the flow, or external, like a channel), and\supercite{Wiki_mach-number}
+        \item $c$ is the speed of sound in the medium, which in air varies with the square root of the thermodynamic temperature.\supercite{Wiki_mach-number}
+      \end{itemize}
+
+\subsection{Specific Impulse}
+      The \textit{specific impulse $I_s$} represents the thrust per unit propellant "weight" flow rate. It is an important figure of merit of the performance of any rocket propulsion system, a concept similar to kilometers per liter or miles per hour as applied to an automobile. A higher number often indicates a better performance. If the total propellant mass flow rate is $\dot{m}$ and the standard acceleration of gravity is $g_0$ (with an \textit{average} value at the Earth's sea level of $9.8066\ m/sec^2$ or $32.174\ ft/sec^2$), then 
+      \begin{equation} \label{eq:Specific Impulse}
+        I_s = \frac{\int_{0}^{t}Fdt}{g_{0} \int_0^t \dot{m}dt}
+      \end{equation}
+
 \subsection{Escape velocity}
+Escaoe velocity can be defined as "the minimum speed needed for an object to escape from contact with or orbit of a primary body, assuming:
+\begin{itemize}
+  \item Ballistic trajectory (no other forces are acting on the object, such as propulsion or friction).
+  \item No other gravity-producing objects exist."
+\end{itemize}
+while the term "velocity" is used colloquially, a more accurate represntation would be "speed" as it is independent of direction.
+Escape speed at a distance d from the center of a spherically symmetric primary body (such as a star or a planet) with mass M is given by the formula:
+$$
+v_e = \sqrt{\frac{2GM}{d}} = \sqrt{2gd}
+$$
+where:
+\begin{itemize}
+  \item $G$ is the universal gravitational constant ($G\approx 6.67\times 10^{-11}m^3\times kg^{-1}\times s^{-2}$)
+  \item $g = GM/d^2$ is the local gravitational acceleration (or the surface gravity, when d = r).
+\end{itemize}
+The value $GM$ is called the \textit{gravitational standard parameter}, or $\mu$.
+When given an initial speed $V$ greater than the escape speed $v_e$, the object will asymptotically approach the hyperboflic excess speed $v_{\infty}$, satisfying the equation:
+$$
+v_{\infty}^2 = V^2 - v_e^2
+$$
+for example, with the definitional value for standard gravity of $9.80665 m/s^2$, the escape velocity for Earth is $11.186\ km/s\ (40,270\ km/h)$.\supercite{Wiki_escape-velocity}
 \subsection{Tsoilkovsky's Rocket Equation}
-Also called the \textit{Classical Rocket Equation} or \textit{Ideal Rocket Equation}. It describes the motion of vehicles based on the concept of a rocket, defined as "a device that can apply acceleration to itself using thrust by expelling part of its mass with high velocity and can thereby move due to the conservation of momentum".\supercite{Wiki_toilkovskys-equation}\\
+Also called the \textit{Classical Rocket Equation} or \textit{Ideal Rocket Equation}. It describes the motion of vehicles based on the concept of a rocket, defined as "a device that can apply acceleration to itself using thrust by expelling part of its mass with high velocity and can thereby move due to the conservation of momentum".\supercite{Wiki_tsiolkovskys-equation}\\
 The maximum change of velociry of thr rocket, $\Delta v$ (with no extrenal forces acting) is:
 $$
 \Delta v = v_e ln \frac{m_0}{m_f} = I_{sp}g_0 ln\frac{m_0}{m_f}
@@ -270,7 +299,7 @@ The required propellant mass is then:
 $$
 m_0 - m_f = m_f(e^{\Delta v/v_e}-1)
 $$
-This shows us, as can be seen in Figure~\ref{fig:massratio_vs_exhaustratio}, that the nescessary wet mass grows exponentionally with the desired $\Delta v$.\supercite{Wiki_toilkovskys-equation}
+This shows us, as can be seen in Figure~\ref{fig:massratio_vs_exhaustratio}, that the nescessary wet mass grows exponentionally with the desired $\Delta v$.\supercite{Wiki_tsiolkovskys-equation}
 \begin{figure}[H]
   \centering
   \begin{tikzpicture}
@@ -292,5 +321,59 @@ This shows us, as can be seen in Figure~\ref{fig:massratio_vs_exhaustratio}, tha
   \label{fig:massratio_vs_exhaustratio}
 \end{figure}
 
-\subsection{Coriolis Effect}
+\subsection{Coriolis Force}
+Also known as the \textit{Coriolis effect}, the Coriolis force is a pseudo force that acts on objects in motion within a frame of reference that rotates with respect to an inertial frame. In a reference frame with clockwise rotation, the force acts to the left of the motion of the object. In one with anticlockwise (or counterclockwise) rotation, the force acts to the right. Deflection of an object due to the Coriolis force is called the Coriolis effect. \supercite{Wiki_coriolis-force}
+
+In Newtonian mechanics, the equation of motion for an object in an inertial reference frame is:
+$$
+F = ma
+$$
+where $F$ is the vector sum of the physical forces acting on the object, $m$ is the mass of the object and $a$ is the acceleration of the object relative to the inertial reference frame. Transforming this equation to a reference frame rotating about a fixed axis through the origin with angular velocity $\omega$ having variable rotation rate, the equation takes the 
+following form:
+$$
+F' = F-m\frac{d\omega}{dt}\times r'-2m\omega\times v' - m\omega\times (\omega\times r')
+$$
+where the prime ($'$) variables denote coordinates of the rotating reference frame (not a derivative) and: 
+\begin{itemize}
+  \item $F$ is the vector sum of the physical forces acting on the object.
+  \item $\omega$ is the angular velocity of the rotating reference frame relative to the inertial frame.
+  \item $r'$ is the position vector of the object relative to the rotating reference frame. 
+  \item $v'$ is the velocity of the object relative to the rotating reference frame.
+  \item $a'$ is the acceleration of the object relative to the rotating reference frame.
+\end{itemize}
+The fictitious forces as they are perceived in the rotating frame act as additional forces that contribute to the apparent acceleration just like the real external forces. The fictitious force terms of the equation are, reading from left to right:
+\begin{itemize}
+  \item Euler force: $-m\frac{d\omega}{dt}\times r'$
+  \item Coriolis force: $-2m(\omega\times v')$
+  \item Centrifugal force: $-m\omega\times(\omega\times r')$
+\end{itemize}
+As seen in these formulas the Euler and centrifugal forces depend on the position vector ($r'$) of the object, while the Coriolis force depends on the object's velocity ($v'$) as measured in the rotating reference frame. As expected, for a non-rotating inertial frame of reference ($\omega = 0$) the Coriolis force and all other fictitious forces disappear.
+
 \subsection{Nozzle flow and geometry}
+Rocket engine nozzles, also called propelling nozzles. They are usually of de Laval type (See Figure~\ref{fig:de-laval-nozzle}) used in a rocket engine to expand and accelerate combustion products to high supersonic velocities.\supercite{Wiki_rocket-nozzle}${}^;$\supercite{doi:10.1021/acsomega.1c07050}
+
+Typically, the design of a nozzle aims to achieve maiximum thrust coefficient ($C_F$) potential, which acts as a strong multiplier to the exhaust velocity inherent to the combustion chamber alone (it's characteristic velocity ($c^*$, which is independent of nozzle design).\supercite{Wiki_rocket-nozzle}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.65\textwidth]{z_Assets/Graphics/Schematics/De_laval_nozzle.png}
+  \end{center}
+  \caption{A de Laval nozzle, showing approximate flow velocity increasing from green to red in the direction of flow\supercite{Img_de-laval-nozzle}}\label{fig:de-laval-nozzle}
+\end{figure}
+
+The analysis of gas flow through de Laval nozzles involves a number of concepts and simplifying assumptions:
+\begin{itemize}
+  \item The combustion gas is an ideal gas.
+  \item The gas flow is isentropic.
+  \item The gas flow rate is constant during the period of the propellant burn.
+  \item The gas flow rate is non-turbulent and axisymmetric from gas inlet to exhaust gas exit.
+  \item The flow is compressible as the fluid is a gas.
+\end{itemize}
+
+As the combustion gas enters the rocket nozzle, it is traveling at subsonic velocities. As the throat constricts, the gas is forced to accelerate until at the nozzle throat, where the cross-sectional area is the least, the linear velocity becomes sonic. From the throat the cross-sectional area then increases, the gas expands and the linear velocity becomes progressively more supersonic.
+
+The linear velocity of the exiting exhaust gases can be calculated using the following equation:
+$$
+v_e = \sqrt{\frac{TR}{M}\times\frac{2\gamma}{\gamma - 1}[1-(\frac{p_e}{p})^{\frac{\gamma -1}{\gamma}}]}
+$$
+
+

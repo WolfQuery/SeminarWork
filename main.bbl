@@ -203,6 +203,66 @@
       \verb https://commons.wikimedia.org/wiki/File:Rocket_engine_A4_V2.jpg
       \endverb
     \endentry
+    \entry{doi:10.1021/acsomega.1c07050}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=906dfdb2a248a47273a8dc45c379dd5e}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Tianwen},
+           giveni={T\bibinitperiod}}}%
+        {{hash=49a5be157444e30989591a9b7e686682}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhongwei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f79ae7033eb4d0062661bfc9a777f68a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jingbin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=593cfc8160af12fe6de57bb1bb854b36}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yisu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=857fd3ed15a72c26d23825a89f6456af}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd43699f19c9c6f2fcc0253bcc0fd5f5}
+      \strng{fullhash}{637fe167db68a3da3e25bc11abfcee46}
+      \strng{fullhashraw}{637fe167db68a3da3e25bc11abfcee46}
+      \strng{bibnamehash}{bd43699f19c9c6f2fcc0253bcc0fd5f5}
+      \strng{authorbibnamehash}{bd43699f19c9c6f2fcc0253bcc0fd5f5}
+      \strng{authornamehash}{bd43699f19c9c6f2fcc0253bcc0fd5f5}
+      \strng{authorfullhash}{637fe167db68a3da3e25bc11abfcee46}
+      \strng{authorfullhashraw}{637fe167db68a3da3e25bc11abfcee46}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACS Omega}
+      \field{number}{11}
+      \field{title}{Effect of Nozzle Geometry on the Flow Dynamics and Resistance Inside and Outside the Cone-Straight Nozzle}
+      \field{volume}{7}
+      \field{year}{2022}
+      \field{pages}{9652\bibrangedash 9665}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1021/acsomega.1c07050
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/acsomega.1c07050
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acsomega.1c07050
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acsomega.1c07050
+      \endverb
+    \endentry
     \entry{Img_spaceshipone}{image}{}{}
       \name{author}{1}{}{%
         {{hash=684d2651fa6a888a48db30cb195bc66b}{%
@@ -497,7 +557,7 @@
       \field{title}{Project Daedalus: The Propulsion System Part 1; Theoretical considerations and calculations. 2. Review of Advanced Propulsion Systems}
       \field{year}{n.d.}
     \endentry
-    \entry{spaceX-raptor}{online}{}{}
+    \entry{Wiki_coriolis-force}{online}{}{}
       \name{author}{1}{}{%
         {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
            family={{Wikipedia Contributors}},
@@ -516,17 +576,17 @@
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-10-29}
-      \field{title}{SpaceX Raptor}
+      \field{note}{Accessed: 2025-11-10}
+      \field{title}{Coriolis Effect}
       \field{year}{2025}
       \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/SpaceX_Raptor
+      \verb https://en.wikipedia.org/wiki/Coriolis_force
       \endverb
       \verb{url}
-      \verb https://en.wikipedia.org/wiki/SpaceX_Raptor
+      \verb https://en.wikipedia.org/wiki/Coriolis_force
       \endverb
     \endentry
-    \entry{Wiki_toilkovskys-equation}{online}{}{}
+    \entry{Wiki_escape-velocity}{online}{}{}
       \name{author}{1}{}{%
         {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
            family={{Wikipedia Contributors}},
@@ -541,6 +601,93 @@
       \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
       \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
       \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-11-10}
+      \field{title}{Escape velocity}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Escape_velocity
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Escape_velocity
+      \endverb
+    \endentry
+    \entry{Wiki_rocket-nozzle}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
+           family={{Wikipedia Contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{bibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorbibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \field{extraname}{3}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-11-11}
+      \field{title}{Rocket engine nozzle}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Rocket_engine_nozzle
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Rocket_engine_nozzle
+      \endverb
+    \endentry
+    \entry{spaceX-raptor}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
+           family={{Wikipedia Contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{bibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorbibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \field{extraname}{4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-29}
+      \field{title}{SpaceX Raptor}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/SpaceX_Raptor
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/SpaceX_Raptor
+      \endverb
+    \endentry
+    \entry{Wiki_tsiolkovskys-equation}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=535bebf06af273c7e2d9ff9d7fc43470}{%
+           family={{Wikipedia Contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{fullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{bibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorbibnamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authornamehash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhash}{535bebf06af273c7e2d9ff9d7fc43470}
+      \strng{authorfullhashraw}{535bebf06af273c7e2d9ff9d7fc43470}
+      \field{extraname}{5}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -578,6 +725,12 @@
       \field{note}{Accessed October 30, 2025}
       \field{title}{Breakthrough Starshot --- {Wikipedia}{,} The Free Encyclopedia}
       \field{year}{2025}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Breakthrough_Starshot
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Breakthrough_Starshot
+      \endverb
     \endentry
     \entry{Wiki_mach-number}{online}{}{}
       \name{author}{1}{}{%
@@ -637,6 +790,35 @@
       \verb https://en.wikipedia.org/wiki/Scramjet
       \endverb
     \endentry
+    \entry{Img_de-laval-nozzle}{image}{}{}
+      \name{author}{1}{}{%
+        {{hash=a0b75d88a5224e13b5bf64dcabf4d003}{%
+           family={Wolfkeeper},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{fullhash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{fullhashraw}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{bibnamehash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{authorbibnamehash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{authornamehash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{authorfullhash}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \strng{authorfullhashraw}{a0b75d88a5224e13b5bf64dcabf4d003}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{License: CC BY-SA 3.0}
+      \field{title}{De laval nozzle}
+      \field{type}{Schematic}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/File:De_laval_nozzle.svg
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/File:De_laval_nozzle.svg
+      \endverb
+    \endentry
     \entry{young2008}{book}{}{}
       \name{author}{1}{}{%
         {{hash=87edea6a8dfa8394892bd8126cadcc24}{%
@@ -664,6 +846,7 @@
       \field{year}{2008}
     \endentry
   \enddatalist
+  \missing{Wiki_toilkovskys-equation}
 \endrefsection
 \endinput
 

@@ -1,53 +1,43 @@
-\chapter{Practical Part}
-   \section{Methodics}
-In this practical part I will use the software  \textit{Numerical Propulsion System Simulation} (NPSS) to design a liquid‑propellant rocket engine.  
-The aim is to follow a clear, ordered method so that the engine model is built, simulated, and analysed step by step.
-
+\chapter{Applied Conceptual Analysis}
+\section{Methodics}
+For this \textit{experiment} to actually be fruticious, we must first define goals and limitations we are aiming to achieve. Those will be the following:
+\subsection{Goals}
 \begin{enumerate}
-  \item \textbf{Define the design requirements}
-    \begin{itemize}
-      \item Choose the engine’s purpose (for example: first stage of a launch vehicle, sea‑level take‑off).  
-      \item Select the propellants (for example RP‑1 + LOX, or \ce{LH2} + LOX).  
-      \item Set the main targets: thrust (in Newtons or kN), burn time (seconds), maximum allowable engine mass, and operating environment (sea level vs vacuum).
-    \end{itemize}
-
-  \item \textbf{Select the engine cycle \& make initial assumptions} 
-    \begin{itemize}
-      \item Decide on the engine cycle type (gas‑generator, staged‑combustion, etc.).  
-      \item Make initial assumptions: chamber pressure, mixture ratio (oxidiser : fuel), expansion ratio of the nozzle.  
-      \item Note constraints: engine size, material limits, cooling, manufacturability.
-    \end{itemize}
-
-  \item \textbf{Build the NPSS model}
-    \begin{itemize}
-      \item Set up NPSS with the main components: feed system, pumps/turbines, combustion chamber, nozzle.  
-      \item Input the assumed parameters: mass flows, pressures, temperatures, geometry (for example throat area, exit area).  
-      \item Run the simulation for the “design‑point” (the normal operating condition).
-    \end{itemize}
-
-  \item \textbf{Analyse the design‑point results}
-    \begin{itemize}
-      \item Extract performance data: thrust, specific impulse ($I_{\!sp}$), propellant mass flow, chamber and nozzle pressures and temperatures.  
-      \item Compare the results with your design targets from Step 1. If the targets are not met, return to Step 2 (adjust assumptions) or Step 3 (modify model) and iterate.
-    \end{itemize}
-
-  \item \textbf{Perform parametric / sensitivity studies}
-    \begin{itemize}
-      \item Vary one parameter at a time (for example mixture ratio, chamber pressure, expansion ratio) and see how performance changes.  
-      \item Record which parameters have the largest effect (sensitivity) and find trade‑offs (for example higher chamber pressure improves $I_{\!sp}$ but may increase mass or cost).  
-      \item Use these findings to refine your design toward a better balance.
-    \end{itemize}
-
-  \item \textbf{Check off‑design / operating range conditions}
-    \begin{itemize}
-      \item Use NPSS to simulate the engine under different conditions: for example different ambient pressures (sea level vs high altitude), partial throttle or start‑up conditions.  
-      \item Determine how performance changes under these conditions: does thrust drop? does $I_{\!sp}$ fall? Are there stability problems?
-    \end{itemize}
-
-  \item \textbf{Document and reflect on the results}
-    \begin{itemize}
-      \item Prepare tables and graphs presenting your results (design point outputs, parametric study results).  
-      \item Discuss your assumptions (for example: ignoring cooling losses, assuming ideal pumps) and their impact.  
-      \item Reflect on what I would do differently if you had more time or resources, and what the limits of my design are.
-    \end{itemize}
+  \item To design a liquid-propellant rocket engine block capable of delivering performance metrics that correspond to a $\Delta v$ on the order of $~1 \%$ of the speed of light ($\approx 2.997\times 10^6  m/s)$.  
+  \item To specify and simulate the engine cycle, propellant combination, and nozzle geometry using Numerical Propulsion System Simulation (NPSS) so that key performance parameters (thrust, specific impulse, effective exhaust velocity, mass-flow) are extracted and analysed.  
+  \item To perform a parametric or sensitivity study varying key independent variables (e.g., chamber pressure, mixture ratio, nozzle expansion ratio) and determine which parameters most significantly affect engine performance.  
+  \item To evaluate off-design conditions (e.g., different ambient pressures, throttle levels) to assess how robust the engine design is across a realistic range of operating environments.
 \end{enumerate}
+
+\subsection{Limitations \& Assumptions}
+This theoretical experiment is subject to the following confines for it to be possible:
+\begin{itemize}
+  \item Steady-state operation is assumed for the engine block; transient behaviours such as start-up, shutdown, or rapid throttle changes are not modelled.  
+  \item The structural mass of the engine block is assumed constant and does not scale with thrust or size; in reality larger thrust engines would incur higher structural mass which is not captured.  
+  \item Detailed mechanical losses in the feed-system (e.g., pump/turbine leakages, bearing losses) are approximated by fixed efficiency values rather than fully modelled computationally.  
+  \item The study focuses solely on the engine block (feed‐system, combustion chamber, nozzle) and \textbf{does not} model full vehicle design, staging or complete mission $\Delta v$ budgets.  
+  \item Propellant storage, tankage, logistics and launch infrastructure (e.g., space‐elevator, in-space construction) are outside the scope of this work and only referenced conceptually.  
+  \item The mission target (~1\% c) is conceptual and serves to guide the performance targets; it is \textbf{not} assumed this engine would alone enable a vehicle to reach interstellar travel without further system stages or infrastructure.
+\end{itemize}
+
+\section{Approach and Scope}
+
+To apply the theoretical foundations discussed in the previous chapters, this section presents a conceptual analysis of the requirements that a liquid-propellant rocket engine would need to meet in order to achieve a $\Delta v$ corresponding to approximately 1\% of the speed of light.
+
+It is hypothesized that by scaling the thrust and performance parameters of the baseline SpaceX Raptor 2 engine (vacuum thrust $\approx2.53 MN$) by a factor of 100, the resulting conceptual liquid-propellant engine block will enable a $\Delta v$ budget corresponding to approximately our goal. (i.e., $\approx 2.997\times10^{6}\;\mathrm{m/s}$) under optimised deep-space vacuum conditions.
+
+The simulation in Numerical Propulsion System Simulation (NPSS) will demonstrate that the chosen engine cycle, propellant combination, nozzle geometry and mass-flow performance yield a specific impulse, effective exhaust velocity and thrust level sufficient to achieve the target $\Delta v$, and that a parametric study of chamber pressure, mixture ratio and nozzle expansion ratio will identify the key parameters most significantly affecting the engine’s performance.
+
+This will allow us to calculate the approximate size and fuel requirement for this theoretical engine utilizing Tsiolkovsky's Rocket Equation.
+
+For these assummptions:
+\begin{itemize}
+  \item Wet to dry mass ratio ($\frac{m_0}{m_f}$) of 20 (i.e. the rocket carries 20 times its mass in fuel initially).
+  \item $\Delta v = 2.997\times10^6 m/s$
+\end{itemize}
+This allows us to calculate the effective exhaust velocity we must reach:
+$$
+v_e = \frac{2.997\times10^6}{\ln(20)}\approx\frac{3\times10^6}{2.99573227355}=1001424.60209\approx 1,001,425\ m/s = 3,605,130\ km/h
+$$
+In this setup the gas exhaust velocity would have to be $\approx 30 \text{ mach}$ to reach $1\%c$ once all of the fuel is exhausted (assuming that the rocket carries 20 times its dry weight in fuel.
+

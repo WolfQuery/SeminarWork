@@ -19,21 +19,20 @@
 
 \usepackage{pgfplots}
 \pgfplotsset{width=10cm,compat=1.9}
-
 \usepgfplotslibrary{external}
-\tikzexternalize
+%\tikzexternalize %%disabled until I fix it (if I fix it)
 
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
 \usepackage[version=4]{mhchem}
 
-\newcommand{\subsubsubsubsection}[1]{
-  \subparagraph{#1}\mbox{}\\
-}
-
+% We do a bit of trolling :3
+%\usepackage[T1]{fontenc}
+%\usepackage[math]{anttor}
 
 %%% title page %%%
+% Do not touch it, it's a mess with a bunch of warnings but it works and looks how it should and I'm afraid trying to fix it would break it too much.
 \pretitle{
 	\vspace*{-6cm}
   \noindent\makebox[\linewidth][c]{\includegraphics[width=6cm]{z_Assets/Images/Image-not-found.png}}
@@ -63,38 +62,33 @@
 	
 	\tableofcontents
 	\newpage
-  %% INTRODUCTION %%
+  %% INTRODUCTION & HISTORY %%
   \include{parts/introduction.tex}
-  %% THEORETICAL PART %%
+  %% THEORETICAL BACKGROUND %%
   \include{parts/theoretical.tex}
-  %% PRACTICAL PART %%
+  %% IS INtERSTELLAR TRAVEL POSSIBLE? %%
+  %\include{parts/interstellar.tex} %%NOTE: SOČ prep %%
+  %% DESIGNING A LIQUID PROPELLANT ROCKET ENGINE %%
   \include{parts/practical.tex}
 	%% CONCLUSION %%
   \include{parts/conclusion.tex}
 
-  \appendix
-
-  \section{Appendix A: Definitions}
-
-\section{Equations}\label{app:equations}
-  \subsection{Mach Number}
-      The Mach number (M or Ma), often only Mach, is a dimensionless quantity in fluid dynamics representing the ratio of flow velocity past a boundary to the local speed of sound.\supercite{Wiki_mach-number}
-      \begin{equation} \label{eq:Mach Number}
-          M = \frac{u}{c}
-      \end{equation}
-      where:
-      \begin{itemize}
-        \item $M$ is the local Mach number,\supercite{Wiki_mach-number}
-        \item $u$ is the local flow velocity with respect to the boundaries (either internal, such as an object immersed in the flow, or external, like a channel), and\supercite{Wiki_mach-number}
-        \item $c$ is the speed of sound in the medium, which in air varies with the square root of the thermodynamic temperature.\supercite{Wiki_mach-number}
-      \end{itemize}
-  \subsection{Specific Impulse}
-      The \textit{specific impulse $I_s$} represents the thrust per unit propellant "weight" flow rate. It is an important figure of merit of the performance of any rocket propulsion system, a concept similar to kilometers per liter or miles per hour as applied to an automobile. A higher number often indicates a better performance. If the total propellant mass flow rate is $\dot{m}$ and the standard acceleration of gravity is $g_0$ (with an \textit{average} value at the Earth's sea level of $9.8066\ m/sec^2$ or $32.174\ ft/sec^2$), then 
-      \begin{equation} \label{eq:Specific Impulse}
-        I_s = \frac{\int_{0}^{t}Fdt}{g_{0} \int_0^t \dot{m}dt}
-      \end{equation}
+  Thank you for taking the time to read this work.
+  To end the paper on a light note, I'd like to present to you a rather amusing "meme" in the form of a photoshopped Twitter (X) post.
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[width=0.95\textwidth]{z_Assets/Images/meme.png}
+    \end{center}
+    \caption{A heavily edited picture of a "Tweet" by Konstaltin Tsiolkovsky regarding his famous Rocket Equation, posed in an amusing memetic format.}
+  \end{figure}
   
-    \printbibliography[type=book, title={Book Sources}]
+          
+      \defbibfilter{papers}{
+      type=article or
+      type=book
+      }
+ 
+      \printbibliography[filter=papers, title={Book and Article Sources}]
 
     \printbibliography[type=online, title={Online Sources}]
 
