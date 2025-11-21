@@ -1,4 +1,4 @@
-\chapter{Practical Part}
+\chapter{Applied Conceptual Analysis}
 \section{Methodics}
 For this \textit{experiment} to actually be fruticious, we must first define goals and limitations we are aiming to achieve. Those will be the following:
 \subsection{Goals}
@@ -10,7 +10,7 @@ For this \textit{experiment} to actually be fruticious, we must first define goa
 \end{enumerate}
 
 \subsection{Limitations \& Assumptions}
-This simulation-study is subject to the following limitations and assumptions:
+This theoretical experiment is subject to the following confines for it to be possible:
 \begin{itemize}
   \item Steady-state operation is assumed for the engine block; transient behaviours such as start-up, shutdown, or rapid throttle changes are not modelled.  
   \item The structural mass of the engine block is assumed constant and does not scale with thrust or size; in reality larger thrust engines would incur higher structural mass which is not captured.  
@@ -20,10 +20,11 @@ This simulation-study is subject to the following limitations and assumptions:
   \item The mission target (~1\% c) is conceptual and serves to guide the performance targets; it is \textbf{not} assumed this engine would alone enable a vehicle to reach interstellar travel without further system stages or infrastructure.
 \end{itemize}
 
-\section{Hypothesis}
-\section{Hypothesis}
+\section{Approach and Scope}
 
-It is hypothesized that by scaling the thrust and performance parameters of the baseline SpaceX Raptor 2 engine (vacuum thrust $\approx2.53 MN$) by a factor of 100, the resulting conceptual liquid-propellant engine block will enable a $\Delta v$ budget corresponding to approximately 1\% of the speed of light (i.e., $\approx 2.997\times10^{6}\;\mathrm{m/s}$) under optimised deep-space vacuum conditions.
+To apply the theoretical foundations discussed in the previous chapters, this section presents a conceptual analysis of the requirements that a liquid-propellant rocket engine would need to meet in order to achieve a $\Delta v$ corresponding to approximately 1\% of the speed of light.
+
+It is hypothesized that by scaling the thrust and performance parameters of the baseline SpaceX Raptor 2 engine (vacuum thrust $\approx2.53 MN$) by a factor of 100, the resulting conceptual liquid-propellant engine block will enable a $\Delta v$ budget corresponding to approximately our goal. (i.e., $\approx 2.997\times10^{6}\;\mathrm{m/s}$) under optimised deep-space vacuum conditions.
 
 The simulation in Numerical Propulsion System Simulation (NPSS) will demonstrate that the chosen engine cycle, propellant combination, nozzle geometry and mass-flow performance yield a specific impulse, effective exhaust velocity and thrust level sufficient to achieve the target $\Delta v$, and that a parametric study of chamber pressure, mixture ratio and nozzle expansion ratio will identify the key parameters most significantly affecting the engine’s performance.
 
@@ -39,5 +40,4 @@ $$
 v_e = \frac{2.997\times10^6}{\ln(20)}\approx\frac{3\times10^6}{2.99573227355}=1001424.60209\approx 1,001,425\ m/s = 3,605,130\ km/h
 $$
 In this setup the gas exhaust velocity would have to be $\approx 30 \text{ mach}$ to reach $1\%c$ once all of the fuel is exhausted (assuming that the rocket carries 20 times its dry weight in fuel.
-\section{Design}
 
